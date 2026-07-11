@@ -49,9 +49,10 @@ function renderRubrics() {
     return `
       <section class="rubric-card" id="${rubric.id}" style="--image: url('${cover.image}')">
         <a href="#works" data-rubric-link="${rubric.id}">
-          <span>${items.length} works</span>
-          <h2>${rubric.title}</h2>
-          <p>${rubric.note}</p>
+          <div class="rubric-copy">
+            <h2>${rubric.title}</h2>
+            <p>${rubric.note}</p>
+          </div>
         </a>
       </section>
     `;
