@@ -9,6 +9,8 @@ function categoryLabel(ids) {
 }
 
 function renderFilters() {
+  if (!filters) return;
+
   const buttons = [
     { id: "all", title: "all" },
     ...rubrics
@@ -62,11 +64,13 @@ function setRubric(rubric) {
   renderWorks();
 }
 
-filters.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-rubric]");
-  if (!button) return;
-  setRubric(button.dataset.rubric);
-});
+if (filters) {
+  filters.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-rubric]");
+    if (!button) return;
+    setRubric(button.dataset.rubric);
+  });
+}
 
 rubricGrid.addEventListener("click", (event) => {
   const link = event.target.closest("[data-rubric-link]");
