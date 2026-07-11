@@ -271,17 +271,27 @@ h2 {
   background-size: cover;
   background-position: center;
   filter: grayscale(0.2) brightness(0.72);
-  transition: transform 0.45s ease;
+  transition: transform 0.45s ease, filter 0.45s ease;
   z-index: -2;
 }
 
 .rubric-card::after {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.78));
+  background:
+    linear-gradient(180deg, rgba(101, 50, 240, 0), rgba(101, 50, 240, 0)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.78));
+  transition: background 0.25s ease;
   z-index: -1;
 }
 
 .rubric-card:hover::before {
   transform: scale(1.04);
+  filter: grayscale(0.05) brightness(0.86) saturate(1.12);
+}
+
+.rubric-card:hover::after {
+  background:
+    linear-gradient(180deg, rgba(101, 50, 240, 0.32), rgba(101, 50, 240, 0.64)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.58));
 }
 
 .rubric-card a {
@@ -289,21 +299,25 @@ h2 {
   height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 8px;
   padding: clamp(14px, 2vw, 22px);
 }
 
-.rubric-card span {
-  color: var(--accent);
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: lowercase;
+.rubric-copy {
+  display: grid;
+  align-content: start;
+  min-height: 92px;
+  gap: 8px;
 }
 
 .rubric-card h2 {
   font-size: clamp(20px, 2vw, 30px);
   line-height: 1;
   color: #fff;
+  transition: color 0.2s ease;
+}
+
+.rubric-card:hover h2 {
+  color: var(--accent);
 }
 
 .rubric-card p {
