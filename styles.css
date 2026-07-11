@@ -168,26 +168,23 @@ h2 {
 .work-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
   gap: 20px;
 }
 
 .work-card {
   position: relative;
-  min-height: clamp(210px, 32vw, 520px);
   overflow: hidden;
   background: #111;
   isolation: isolate;
+  align-self: start;
 }
 
-.work-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: var(--image);
-  background-size: cover;
-  background-position: center;
+.card-image {
+  width: 100%;
+  height: auto;
+  transform-origin: center;
   transition: transform 0.45s ease, filter 0.45s ease;
-  z-index: -2;
 }
 
 .work-card::after {
@@ -195,23 +192,20 @@ h2 {
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.08));
-  z-index: -1;
-}
-
-.work-card:hover::before {
-  transform: scale(1.04);
-  filter: saturate(1.12);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .work-card a {
-  display: grid;
-  min-height: inherit;
-  align-content: start;
-  gap: 24px;
-  padding: clamp(20px, 4vw, 42px);
+  display: block;
+  position: relative;
 }
 
 .work-card h3 {
+  position: absolute;
+  top: clamp(56px, 7vw, 92px);
+  left: clamp(20px, 4vw, 42px);
+  z-index: 2;
   margin: 0;
   color: var(--accent);
   font-size: clamp(28px, 5vw, 64px);
@@ -222,6 +216,10 @@ h2 {
 }
 
 .work-meta {
+  position: absolute;
+  top: clamp(20px, 4vw, 42px);
+  left: clamp(20px, 4vw, 42px);
+  z-index: 2;
   max-width: 34ch;
   color: rgba(255, 255, 255, 0.78);
   font-size: 12px;
@@ -234,6 +232,7 @@ h2 {
   position: absolute;
   top: clamp(24px, 4vw, 44px);
   right: clamp(20px, 4vw, 42px);
+  z-index: 2;
   width: 18px;
   height: 32px;
   margin-top: 8px;
@@ -247,44 +246,43 @@ h2 {
 .rubric-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
+  align-items: start;
   gap: 14px;
 }
 
 .rubric-card {
   position: relative;
-  aspect-ratio: 16 / 9;
   min-height: 0;
   overflow: hidden;
   background: #101010;
   isolation: isolate;
+  align-self: start;
 }
 
-.rubric-card::before,
 .rubric-card::after {
   content: "";
   position: absolute;
   inset: 0;
 }
 
-.rubric-card::before {
-  background-image: var(--image);
-  background-size: cover;
-  background-position: center;
-  filter: grayscale(0.2) brightness(0.72);
-  transition: transform 0.45s ease, filter 0.45s ease;
-  z-index: -2;
-}
-
 .rubric-card::after {
   background:
     linear-gradient(180deg, rgba(101, 50, 240, 0), rgba(101, 50, 240, 0)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.78));
+  pointer-events: none;
   transition: background 0.25s ease;
-  z-index: -1;
+  z-index: 1;
 }
 
-.rubric-card:hover::before {
-  transform: scale(1.04);
+.rubric-card .card-image {
+  filter: grayscale(0.2) brightness(0.72);
+}
+
+.work-card:hover .card-image {
+  filter: saturate(1.12);
+}
+
+.rubric-card:hover .card-image {
   filter: grayscale(0.05) brightness(0.86) saturate(1.12);
 }
 
@@ -295,17 +293,18 @@ h2 {
 }
 
 .rubric-card a {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: clamp(14px, 2vw, 22px);
+  display: block;
+  position: relative;
 }
 
 .rubric-copy {
+  position: absolute;
+  right: clamp(14px, 2vw, 22px);
+  bottom: clamp(14px, 2vw, 22px);
+  left: clamp(14px, 2vw, 22px);
+  z-index: 2;
   display: grid;
   align-content: start;
-  min-height: 92px;
   gap: 8px;
 }
 
@@ -456,9 +455,7 @@ h2 {
 
 .project-gallery img {
   width: 100%;
-  height: 100%;
-  min-height: clamp(220px, 34vw, 560px);
-  object-fit: cover;
+  height: auto;
 }
 
 @media (max-width: 760px) {
