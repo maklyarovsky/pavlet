@@ -4,7 +4,7 @@ Static rebuild of `pavlet.ru`, currently hosted on Tilda.
 
 ## Current State
 
-- `src/` contains the new clean static site prototype.
+- Root files (`index.html`, `styles.css`, `app.js`, `assets/`) contain the new clean static site prototype, ready for GitHub Pages.
 - `reference/tilda/` contains downloaded Tilda HTML snapshots for comparison.
 - `notes/` contains migration notes and extraction details.
 
@@ -15,11 +15,10 @@ Static rebuild of `pavlet.ru`, currently hosted on Tilda.
 
 ## Local Preview
 
-Open `src/index.html` directly in a browser, or run a tiny local server from this folder:
+Open `index.html` directly in a browser, or run a tiny local server from this folder:
 
 ```sh
 python3 -m http.server 8080
 ```
 
-Then open `http://127.0.0.1:8080/src/`.
-
+Then open `http://127.0.0.1:8080/`.
