@@ -16,6 +16,10 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+function workDisplayTitle(work) {
+  return projectDetails[work.slug]?.title || work.title;
+}
+
 function renderFilters() {
   if (!filters) return;
 
@@ -38,10 +42,10 @@ function renderWorks() {
 
   grid.innerHTML = visible.map((work) => `
     <article class="work-card">
-      <a href="project.html?slug=${escapeHtml(work.slug)}" aria-label="Open ${escapeHtml(work.title)}">
-        <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(work.title)}" loading="lazy">
+      <a href="project.html?slug=${escapeHtml(work.slug)}" aria-label="Open ${escapeHtml(workDisplayTitle(work))}">
+        <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(workDisplayTitle(work))}" loading="lazy">
         <span class="work-meta">${escapeHtml(categoryLabel(work.categories))}</span>
-        <h3>${escapeHtml(work.title)}</h3>
+        <h3>${escapeHtml(workDisplayTitle(work))}</h3>
         <svg class="arrow" viewBox="0 0 14 24" aria-hidden="true">
           <path d="M1 1l11 11L1 23" fill="none" stroke="currentColor" stroke-width="2"/>
         </svg>
