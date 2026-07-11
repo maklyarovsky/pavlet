@@ -99,7 +99,7 @@ nav a:hover,
 }
 
 .works {
-  padding: clamp(26px, 4vw, 58px) clamp(10px, 2vw, 24px) clamp(36px, 7vw, 96px);
+  padding: clamp(18px, 3vw, 42px) clamp(10px, 2vw, 24px) clamp(36px, 7vw, 96px);
 }
 
 .filters {
@@ -241,7 +241,7 @@ h2 {
 }
 
 .rubrics {
-  padding: clamp(28px, 5vw, 70px) clamp(10px, 2vw, 24px) clamp(26px, 5vw, 64px);
+  padding: clamp(24px, 4vw, 54px) clamp(10px, 2vw, 24px) clamp(16px, 3vw, 34px);
 }
 
 .rubric-grid {
