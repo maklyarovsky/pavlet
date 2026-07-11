@@ -99,7 +99,7 @@ nav a:hover,
 }
 
 .works {
-  padding: clamp(36px, 7vw, 96px) clamp(10px, 2vw, 24px);
+  padding: clamp(26px, 4vw, 58px) clamp(10px, 2vw, 24px) clamp(36px, 7vw, 96px);
 }
 
 .filters {
@@ -241,8 +241,7 @@ h2 {
 }
 
 .rubrics {
-  padding: clamp(36px, 7vw, 96px) clamp(10px, 2vw, 24px);
-  border-top: 1px solid var(--line);
+  padding: clamp(28px, 5vw, 70px) clamp(10px, 2vw, 24px) clamp(26px, 5vw, 64px);
 }
 
 .rubric-grid {
@@ -253,7 +252,8 @@ h2 {
 
 .rubric-card {
   position: relative;
-  min-height: 360px;
+  aspect-ratio: 16 / 9;
+  min-height: 0;
   overflow: hidden;
   background: #101010;
   isolation: isolate;
@@ -286,11 +286,11 @@ h2 {
 
 .rubric-card a {
   display: flex;
-  min-height: inherit;
+  height: 100%;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 14px;
-  padding: 24px;
+  gap: 8px;
+  padding: clamp(14px, 2vw, 22px);
 }
 
 .rubric-card span {
@@ -301,17 +301,17 @@ h2 {
 }
 
 .rubric-card h2 {
-  font-size: clamp(24px, 3vw, 38px);
+  font-size: clamp(20px, 2vw, 30px);
   line-height: 1;
   color: #fff;
 }
 
 .rubric-card p {
-  min-height: 4.4em;
   margin: 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: clamp(11px, 1.1vw, 13px);
   font-weight: 300;
+  line-height: 1.3;
 }
 
 .about {
