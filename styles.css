@@ -312,12 +312,12 @@ h2 {
 .rubric-card h2 {
   font-size: clamp(20px, 2vw, 30px);
   line-height: 1;
-  color: #fff;
+  color: var(--accent);
   transition: color 0.2s ease;
 }
 
 .rubric-card:hover h2 {
-  color: var(--accent);
+  color: var(--muted);
 }
 
 .rubric-card p {
