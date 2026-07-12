@@ -187,6 +187,10 @@ h2 {
   transition: transform 0.45s ease, filter 0.45s ease;
 }
 
+.work-card .card-image {
+  object-fit: cover;
+}
+
 .work-card::after {
   content: "";
   position: absolute;
@@ -199,6 +203,7 @@ h2 {
 .work-card a {
   display: block;
   position: relative;
+  height: 100%;
 }
 
 .work-card h3 {
