@@ -57,12 +57,63 @@ function renderGallery() {
   if (!images.length) return "";
 
   return `
-    <section class="project-gallery" aria-label="Project stills">
-      ${images.map((image, index) => `
-        <figure>
-          <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
-        </figure>
-      `).join("")}
+    <section class="project-gallery-section" aria-label="Project stills">
+      <div class="project-section-head">
+        <p class="eyebrow">stills</p>
+      </div>
+      <div class="project-gallery">
+        ${images.map((image, index) => `
+          <figure>
+            <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
+          </figure>
+        `).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function relatedWorks() {
+  const categorySet = new Set(work.categories || []);
+
+  return works
+    .filter((item) => item.slug !== work.slug)
+    .map((item) => ({
+      item,
+      score: (item.categories || []).filter((category) => categorySet.has(category)).length
+    }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map(({ item }) => item);
+}
+
+function renderRelated() {
+  const related = relatedWorks();
+  if (!related.length) return "";
+
+  return `
+    <section class="related-projects" aria-label="Related projects">
+      <div class="project-section-head">
+        <p class="eyebrow">similar</p>
+        <h2>more works</h2>
+      </div>
+      <div class="related-grid">
+        ${related.map((item) => {
+          const itemDetails = projectDetails[item.slug] || {};
+
+          return `
+            <article class="related-card">
+              <a href="project.html?slug=${escapeHtml(item.slug)}">
+                <img src="${escapeHtml(item.image)}" alt="${escapeHtml(itemDetails.title || item.title)}" loading="lazy">
+                <div class="related-card-copy">
+                  <p>${escapeHtml(projectCategoryLabel(item.categories))}</p>
+                  <h3>${escapeHtml(itemDetails.title || item.title)}</h3>
+                </div>
+              </a>
+            </article>
+          `;
+        }).join("")}
+      </div>
     </section>
   `;
 }
@@ -82,6 +133,7 @@ const title = details.title || work.title;
 document.title = `Pavlet — ${title}`;
 
 page.innerHTML = `
+  ${renderVideo()}
   <section class="project-intro">
     <a class="back-link" href="index.html#works">back to works</a>
     <div class="project-heading">
@@ -94,6 +146,6 @@ page.innerHTML = `
       ${renderVideoLinks()}
     </div>
   </section>
-  ${renderVideo()}
   ${renderGallery()}
+  ${renderRelated()}
 `;
