@@ -133,13 +133,15 @@ const title = details.title || work.title;
 document.title = `Pavlet — ${title}`;
 
 page.innerHTML = `
-  ${renderVideo()}
-  <section class="project-intro">
+  <section class="project-hero">
     <a class="back-link" href="index.html#works">back to works</a>
     <div class="project-heading">
       <p class="eyebrow">${escapeHtml(projectCategoryLabel(work.categories))}</p>
       <h1>${escapeHtml(title)}</h1>
     </div>
+  </section>
+  ${renderVideo()}
+  <section class="project-intro">
     ${renderDescription(details.description)}
     <div class="project-actions">
       <a class="project-button" href="${escapeHtml(details.originalUrl || `https://pavlet.ru/${work.slug}`)}" rel="noopener">original page</a>
