@@ -508,6 +508,14 @@ h2 {
   gap: 0;
 }
 
+.project-gallery[data-count="6"] {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-gallery[data-count="8"] {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .project-gallery figure {
   aspect-ratio: 16 / 9;
   margin: 0;

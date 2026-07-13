@@ -106,7 +106,7 @@ function renderGallery() {
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
-      <div class="project-gallery">
+      <div class="project-gallery" data-count="${images.length}">
         ${images.map((image, index) => `
           <figure>
             <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
