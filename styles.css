@@ -321,8 +321,8 @@ h2 {
 
 .rubric-copy {
   position: absolute;
+  top: clamp(48px, 5vw, 88px);
   right: clamp(14px, 2vw, 22px);
-  bottom: clamp(14px, 2vw, 22px);
   left: clamp(14px, 2vw, 22px);
   z-index: 2;
   display: grid;
