@@ -60,9 +60,9 @@ nav {
 nav a,
 .about-links a {
   color: var(--muted);
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(13px, 1.45vw, 17px);
   font-weight: 300;
-  transition: color 0.2s ease;
+  transition: color 0.35s ease;
 }
 
 nav a:hover,
@@ -184,7 +184,7 @@ h2 {
   height: 100%;
   object-fit: contain;
   transform-origin: center;
-  transition: transform 0.45s ease, filter 0.45s ease;
+  transition: transform 1.15s cubic-bezier(0.2, 0.72, 0.18, 1), filter 1.15s cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
 .work-card .card-image {
@@ -195,9 +195,12 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.08));
+  background:
+    linear-gradient(180deg, rgba(101, 50, 240, 0), rgba(101, 50, 240, 0)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.08));
   pointer-events: none;
   z-index: 1;
+  transition: background 1.05s cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
 .work-card a {
@@ -219,6 +222,7 @@ h2 {
   line-height: 1.12;
   letter-spacing: 0;
   text-transform: lowercase;
+  transition: color 0.75s cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
 .work-meta {
@@ -286,7 +290,18 @@ h2 {
 }
 
 .work-card:hover .card-image {
-  filter: saturate(1.12);
+  filter: saturate(1.16) brightness(0.95);
+  transform: scale(1.045);
+}
+
+.work-card:hover::after {
+  background:
+    linear-gradient(180deg, rgba(101, 50, 240, 0.3), rgba(101, 50, 240, 0.66)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.54));
+}
+
+.work-card:hover h3 {
+  color: var(--muted);
 }
 
 .rubric-card:hover .card-image {
