@@ -467,21 +467,26 @@ h2 {
 
 .project-description {
   display: grid;
-  gap: 12px;
-  max-width: 1540px;
+  gap: 7px;
+  max-width: 1180px;
 }
 
 .project-description p {
   margin: 0;
   color: var(--muted);
-  font-size: clamp(15px, 1.45vw, 22px);
+  font-size: clamp(13px, 1.08vw, 18px);
   font-weight: 300;
-  line-height: 1.62;
+  line-height: 1.46;
+}
+
+.project-description strong {
+  color: #fff;
+  font-weight: 600;
 }
 
 .project-gallery-section,
 .related-projects {
-  padding: 0 clamp(18px, 4vw, 56px) clamp(46px, 8vw, 104px);
+  padding: 0 0 clamp(46px, 8vw, 104px);
 }
 
 .project-section-head {
@@ -500,7 +505,7 @@ h2 {
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 0;
 }
 
 .project-gallery figure {
@@ -611,7 +616,7 @@ h2 {
   }
 
   .project-description p {
-    font-size: clamp(16px, 5vw, 24px);
+    font-size: clamp(13px, 4.1vw, 18px);
   }
 
   .section-head {

@@ -16,6 +16,54 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
+const creditRoles = [
+  "produced & directed by",
+  "produced & directed",
+  "director & DOP",
+  "Director, DOP, concept",
+  "DOP, director",
+  "DOP, light, edit",
+  "production assists",
+  "produced by",
+  "style assist",
+  "set-design",
+  "art direction",
+  "makeup, hair",
+  "photo",
+  "style",
+  "models",
+  "model",
+  "titles",
+  "brands",
+  "brand",
+  "assist",
+  "light",
+  "video",
+  "director",
+  "producer and casting",
+  "producer",
+  "production",
+  "prod",
+  "dress",
+  "mua",
+  "muah",
+  "gaffer",
+  "media",
+  "VFX"
+];
+
+function formatDescriptionLine(line) {
+  let output = escapeHtml(line);
+
+  creditRoles.forEach((role) => {
+    const escapedRole = escapeHtml(role);
+    const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ]|&quot;|«))`, "g");
+    output = output.replace(pattern, "$1<strong>$2</strong>");
+  });
+
+  return output;
+}
+
 function normalizeEmbed(url) {
   if (!url) return "";
   return url.replace(/^http:/, "https:");
@@ -31,7 +79,7 @@ function renderDescription(text) {
 
   return `
     <div class="project-description">
-      ${lines.map((line) => `<p>${escapeHtml(line)}</p>`).join("")}
+      ${lines.map((line) => `<p>${formatDescriptionLine(line)}</p>`).join("")}
     </div>
   `;
 }
@@ -58,9 +106,6 @@ function renderGallery() {
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
-      <div class="project-section-head">
-        <p class="eyebrow">stills</p>
-      </div>
       <div class="project-gallery">
         ${images.map((image, index) => `
           <figure>
@@ -125,6 +170,17 @@ function renderVideoLinks() {
   `;
 }
 
+function renderProjectActions() {
+  const videoLinks = renderVideoLinks();
+  if (!videoLinks) return "";
+
+  return `
+    <div class="project-actions">
+      ${videoLinks}
+    </div>
+  `;
+}
+
 const title = details.title || work.title;
 document.title = `Pavlet — ${title}`;
 
@@ -139,10 +195,7 @@ page.innerHTML = `
   ${renderVideo()}
   <section class="project-intro">
     ${renderDescription(details.description)}
-    <div class="project-actions">
-      <a class="project-button" href="${escapeHtml(details.originalUrl || `https://pavlet.ru/${work.slug}`)}" rel="noopener">original page</a>
-      ${renderVideoLinks()}
-    </div>
+    ${renderProjectActions()}
   </section>
   ${renderGallery()}
   ${renderRelated()}
