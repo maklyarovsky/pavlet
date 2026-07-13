@@ -93,10 +93,6 @@ function renderRelated() {
 
   return `
     <section class="related-projects" aria-label="Related projects">
-      <div class="project-section-head">
-        <p class="eyebrow">similar</p>
-        <h2>more works</h2>
-      </div>
       <div class="related-grid">
         ${related.map((item) => {
           const itemDetails = projectDetails[item.slug] || {};
