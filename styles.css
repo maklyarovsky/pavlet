@@ -55,7 +55,8 @@ nav {
 }
 
 nav a,
-.about-links a {
+.about-links a,
+.footer-contacts a {
   color: var(--muted);
   font-size: clamp(13px, 1.45vw, 17px);
   font-weight: 300;
@@ -63,7 +64,8 @@ nav a,
 }
 
 nav a:hover,
-.about-links a:hover {
+.about-links a:hover,
+.footer-contacts a:hover {
   color: var(--accent);
 }
 
@@ -375,6 +377,53 @@ h2 {
   padding-top: 10px;
 }
 
+.education {
+  display: grid;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+.education ul {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.education li {
+  color: var(--muted);
+  font-size: clamp(13px, 1.35vw, 17px);
+  font-weight: 300;
+  line-height: 1.45;
+}
+
+.education strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: clamp(34px, 6vw, 72px) clamp(22px, 4vw, 60px);
+  border-top: 1px solid var(--line);
+}
+
+.footer-logo img {
+  width: clamp(260px, 20vw, 420px);
+  height: auto;
+}
+
+.footer-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 12px 22px;
+}
+
 .project-page {
   min-height: calc(100svh - 86px);
 }
@@ -606,8 +655,22 @@ h2 {
   .about,
   .project-intro,
   .project-gallery,
-  .related-grid {
+  .related-grid,
+  .site-footer {
     grid-template-columns: 1fr;
+  }
+
+  .site-footer {
+    display: grid;
+    justify-items: start;
+  }
+
+  .footer-logo img {
+    width: 230px;
+  }
+
+  .footer-contacts {
+    justify-content: flex-start;
   }
 
   .work-grid {
