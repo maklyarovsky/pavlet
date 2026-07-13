@@ -20,7 +20,7 @@ const works = [
   { slug: "alice", title: "Alice", categories: ["videoart"], image: "https://static.tildacdn.com/tild6434-6562-4533-b238-353066663564/Screenshot_2024-01-2.png" },
   { slug: "dagestan", title: "Dagestan", categories: ["commercials"], image: "https://static.tildacdn.com/tild3232-3932-4237-b830-666435363430/Screenshot_2024-01-1.png" },
   { slug: "pankisi", title: "Pankisi", categories: ["music", "videoart"], image: "https://static.tildacdn.com/tild6230-6636-4161-b437-363831663864/Screenshot_2024-02-2.png" },
-  { slug: "qhuaua", title: "JRPGEJ", categories: ["music"], image: "https://static.tildacdn.com/tild3661-6232-4561-a365-306661636365/IMG_6344_copy.jpg" },
+  { slug: "qhuaua", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild3661-6232-4561-a365-306661636365/IMG_6344_copy.jpg" },
   { slug: "followmeto", title: "Follow Me To", categories: ["commercials", "fashion"], image: "https://static.tildacdn.com/tild3633-3066-4133-a432-653561366232/222.jpg" },
   { slug: "madeinmilan", title: "Made in Milan", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6366-3330-4261-a135-303038373535/IMG_6357_copy.jpg" },
   { slug: "subay", title: "Subay", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6234-6631-4133-a563-373964386234/Screenshot_2024-01-1.png" },
@@ -28,7 +28,7 @@ const works = [
   { slug: "daydreaming", title: "Daydreaming", categories: ["videoart"], image: "https://static.tildacdn.com/tild3337-3932-4138-b031-623461643534/Screenshot_2024-01-2.png" },
   { slug: "watercolor", title: "Watercolor", categories: ["videoart"], image: "https://static.tildacdn.com/tild6537-6637-4863-b030-376239343132/Screenshot_2024-01-2.png" },
   { slug: "karmel", title: "Karmel", categories: ["commercials"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
-  { slug: "tole", title: "JRPGEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
+  { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
   { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
   { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
   { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
@@ -280,8 +280,8 @@ const projectDetails = {
     "originalUrl": "https://pavlet.ru/pankisi"
   },
   "qhuaua": {
-    "title": "JRPGEJ — Qhuaua E Ored music video",
-    "description": "Music video for circassian post-traditional band «JRPGEJ» on \"The Boar and The Hunter\" song, using digital interpretations of an old circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage museum and partner institutions.\nhttps://russianartarchive.net/ru/catalogue/document/V14460",
+    "title": "JRPJEJ — Qhuaua E Ored music video",
+    "description": "Music video for circassian post-traditional band «JRPJEJ» on \"The Boar and The Hunter\" song, using digital interpretations of an old circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage museum and partner institutions.\nhttps://russianartarchive.net/ru/catalogue/document/V14460",
     "embeds": [
       "https://player.vimeo.com/video/361296474?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -420,8 +420,8 @@ const projectDetails = {
     "originalUrl": "https://pavlet.ru/karmel"
   },
   "tole": {
-    "title": "JRPGEJ — Quedzoque Tole Tsık’u (Single Version)",
-    "description": "Mood music video for JRPGEJ post-traditional circassian folk band. The song, despite its military theme, is not really about war. It serves more as a backdrop for a story about a tough life and the approach of death, with some bright moments sprinkled in. The video was shot in Southern Dagestan in May 2023.",
+    "title": "JRPJEJ — Quedzoque Tole Tsık’u (Single Version)",
+    "description": "Mood music video for JRPJEJ post-traditional circassian folk band. The song, despite its military theme, is not really about war. It serves more as a backdrop for a story about a tough life and the approach of death, with some bright moments sprinkled in. The video was shot in Southern Dagestan in May 2023.",
     "embeds": [
       "https://www.youtube.com/embed/uD8XFIyIeGc?rel=0&fmt=18&html5=1&showinfo=0"
     ],
