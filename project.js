@@ -61,6 +61,11 @@ function formatDescriptionLine(line) {
     output = output.replace(pattern, "$1<strong>$2</strong>");
   });
 
+  output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
+    const linkLabel = label.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    return `<a href="${escapeHtml(url)}" rel="noopener">${linkLabel}</a>`;
+  });
+
   return output;
 }
 
@@ -104,10 +109,11 @@ function renderGallery() {
   const images = (details.gallery || []).filter(Boolean);
   if (!images.length) return "";
   const photoProject = (work.categories || []).includes("photo");
+  const reelsProject = (work.categories || []).includes("reels");
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
-      <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}>
+      <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}${reelsProject ? " data-reels-project=\"true\"" : ""}>
         ${images.map((image, index) => `
           <figure>
             <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">

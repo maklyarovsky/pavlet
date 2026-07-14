@@ -11,6 +11,7 @@ const rubrics = [
 
 const works = [
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
+  { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01.gif" },
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
   { slug: "elle", title: "Elle", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
   { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
@@ -43,6 +44,22 @@ const works = [
 ];
 
 const projectDetails = {
+  "lancome-bafta-bts": {
+    "title": "BAFTA BTS for Lancome",
+    "description": "brand [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome",
+    "embeds": [],
+    "videoLinks": [],
+    "gallery": [
+      "assets/images/lancome-bafta-bts-01.gif",
+      "assets/images/lancome-bafta-bts-02.jpg",
+      "assets/images/lancome-bafta-bts-03.jpg",
+      "assets/images/lancome-bafta-bts-04.jpg",
+      "assets/images/lancome-bafta-bts-05.jpg",
+      "assets/images/lancome-bafta-bts-06.jpg",
+      "assets/images/lancome-bafta-bts-07.jpg",
+      "assets/images/lancome-bafta-bts-08.jpg"
+    ]
+  },
   "pketar-catch-em-all": {
     "title": "Pketar x Others \"catch 'em all\"",
     "description": "AI photo series for Pketar x Others",
