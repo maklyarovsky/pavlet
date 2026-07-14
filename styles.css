@@ -2,7 +2,7 @@
   --bg: #000;
   --text: #f4f1ee;
   --muted: #c7c7c7;
-  --accent: #6532f0;
+  --accent: #b7ff00;
   --line: rgba(255, 255, 255, 0.14);
 }
 
@@ -200,7 +200,7 @@ h2 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(101, 50, 240, 0), rgba(101, 50, 240, 0)),
+    linear-gradient(180deg, rgba(183, 255, 0, 0), rgba(183, 255, 0, 0)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.08));
   pointer-events: none;
   z-index: 1;
@@ -282,7 +282,7 @@ h2 {
 
 .rubric-card::after {
   background:
-    linear-gradient(180deg, rgba(101, 50, 240, 0), rgba(101, 50, 240, 0)),
+    linear-gradient(180deg, rgba(183, 255, 0, 0), rgba(183, 255, 0, 0)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.78));
   pointer-events: none;
   transition: background 0.25s ease;
@@ -300,7 +300,7 @@ h2 {
 
 .work-card:hover::after {
   background:
-    linear-gradient(180deg, rgba(101, 50, 240, 0.3), rgba(101, 50, 240, 0.66)),
+    linear-gradient(180deg, rgba(183, 255, 0, 0.3), rgba(183, 255, 0, 0.66)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.54));
 }
 
@@ -314,7 +314,7 @@ h2 {
 
 .rubric-card:hover::after {
   background:
-    linear-gradient(180deg, rgba(101, 50, 240, 0.32), rgba(101, 50, 240, 0.64)),
+    linear-gradient(180deg, rgba(183, 255, 0, 0.32), rgba(183, 255, 0, 0.64)),
     linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.58));
 }
 
