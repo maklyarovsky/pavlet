@@ -585,6 +585,11 @@ h2 {
   aspect-ratio: 9 / 16;
 }
 
+.project-gallery figure[data-wide="true"] {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
 .project-gallery img {
   width: 100%;
   height: 100%;

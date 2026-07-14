@@ -10,6 +10,7 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
   { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
   { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01.gif" },
@@ -45,6 +46,21 @@ const works = [
 ];
 
 const projectDetails = {
+  "la-lettre-perfumes": {
+    "title": "Visuals for La Lettre perfumes",
+    "description": "brand [**La Lettre**](https://lalettre-parfum.com/)\nbrief short campaign videos",
+    "embeds": [],
+    "videoLinks": [],
+    "wideGalleryItems": [0],
+    "gallery": [
+      "assets/images/la-lettre-perfumes-01.gif",
+      "assets/images/la-lettre-perfumes-02.jpg",
+      "assets/images/la-lettre-perfumes-03.jpg",
+      "assets/images/la-lettre-perfumes-04.jpg",
+      "assets/images/la-lettre-perfumes-05.png",
+      "assets/images/la-lettre-perfumes-06.png"
+    ]
+  },
   "alfa-bank-commercial": {
     "title": "Alfa Bank commercial",
     "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Alekó**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring",

@@ -110,12 +110,13 @@ function renderGallery() {
   if (!images.length) return "";
   const photoProject = (work.categories || []).includes("photo");
   const reelsProject = (work.categories || []).includes("reels");
+  const wideGalleryItems = new Set(details.wideGalleryItems || []);
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
       <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}${reelsProject ? " data-reels-project=\"true\"" : ""}>
         ${images.map((image, index) => `
-          <figure>
+          <figure${wideGalleryItems.has(index) ? " data-wide=\"true\"" : ""}>
             <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
           </figure>
         `).join("")}
