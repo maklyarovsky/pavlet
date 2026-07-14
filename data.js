@@ -10,6 +10,7 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
   { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01.gif" },
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
@@ -44,6 +45,20 @@ const works = [
 ];
 
 const projectDetails = {
+  "alfa-bank-commercial": {
+    "title": "Alfa Bank commercial",
+    "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Alekó**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring",
+    "embeds": [],
+    "videoLinks": [],
+    "gallery": [
+      "assets/images/alfa-bank-commercial-01.gif",
+      "assets/images/alfa-bank-commercial-02.jpg",
+      "assets/images/alfa-bank-commercial-03.png",
+      "assets/images/alfa-bank-commercial-04.jpg",
+      "assets/images/alfa-bank-commercial-05.jpg",
+      "assets/images/alfa-bank-commercial-06.png"
+    ]
+  },
   "lancome-bafta-bts": {
     "title": "BAFTA BTS for Lancome",
     "description": "brand [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome",
