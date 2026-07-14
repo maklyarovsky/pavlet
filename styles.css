@@ -414,7 +414,6 @@ h2 {
   justify-content: space-between;
   gap: 32px;
   padding: clamp(34px, 6vw, 72px) clamp(22px, 4vw, 60px);
-  border-top: 1px solid var(--line);
 }
 
 .footer-logo img {
