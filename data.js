@@ -3,19 +3,22 @@ const rubrics = [
   { id: "music", title: "music", note: "music videos and live visual pieces" },
   { id: "commercials", title: "commercials", note: "brand films, social cuts, campaigns" },
   { id: "documentary", title: "documentary", note: "places, people, field stories" },
-  { id: "videoart", title: "videoart", note: "art projects, AI, experimental images" }
+  { id: "videoart", title: "videoart", note: "art projects and experimental images" },
+  { id: "ai", title: "AI", note: "AI visuals, generated images, experiments" },
+  { id: "reels", title: "reels", note: "short cuts and social formats" },
+  { id: "photo", title: "photo", note: "photo stories, portraits, stills" }
 ];
 
 const works = [
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
-  { slug: "elle", title: "Elle", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
+  { slug: "elle", title: "Elle", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
   { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
   { slug: "caspian", title: "Caspian", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3039-3563-4361-b732-353662663031/Screenshot_2024-01-1.png" },
   { slug: "flat22", title: "Flat22", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3663-6531-4565-b735-616131343961/Screenshot_2024-01-1.png" },
   { slug: "sildi", title: "Sildi", categories: ["commercials", "documentary"], image: "https://static.tildacdn.com/tild6333-3936-4861-b838-363435643636/Screenshot_2024-01-1.png" },
   { slug: "zabit", title: "Zabit", categories: ["commercials"], image: "https://static.tildacdn.com/tild3532-3766-4037-b635-316162366533/Screenshot_2024-07-2.png" },
   { slug: "measureanji", title: "Measure Anji", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3732-3331-4230-a132-353862303734/Screenshot_2025-03-0.png" },
-  { slug: "donutsday", title: "Donuts Day", categories: ["commercials"], image: "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg" },
+  { slug: "donutsday", title: "Donuts Day", categories: ["commercials", "reels"], image: "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg" },
   { slug: "wayhome", title: "Way Home", categories: ["videoart"], image: "https://static.tildacdn.com/tild3630-3834-4437-b863-633330393831/Screenshot_2024-01-1.png" },
   { slug: "alice", title: "Alice", categories: ["videoart"], image: "https://static.tildacdn.com/tild6434-6562-4533-b238-353066663564/Screenshot_2024-01-2.png" },
   { slug: "dagestan", title: "Dagestan", categories: ["commercials"], image: "https://static.tildacdn.com/tild3232-3932-4237-b830-666435363430/Screenshot_2024-01-1.png" },
@@ -25,17 +28,17 @@ const works = [
   { slug: "madeinmilan", title: "Made in Milan", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6366-3330-4261-a135-303038373535/IMG_6357_copy.jpg" },
   { slug: "subay", title: "Subay", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6234-6631-4133-a563-373964386234/Screenshot_2024-01-1.png" },
   { slug: "tbilisi", title: "Tbilisi", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3263-3265-4034-b131-396538363936/Screenshot_2024-01-2.png" },
-  { slug: "daydreaming", title: "Daydreaming", categories: ["videoart"], image: "https://static.tildacdn.com/tild3337-3932-4138-b031-623461643534/Screenshot_2024-01-2.png" },
-  { slug: "watercolor", title: "Watercolor", categories: ["videoart"], image: "https://static.tildacdn.com/tild6537-6637-4863-b030-376239343132/Screenshot_2024-01-2.png" },
-  { slug: "karmel", title: "Karmel", categories: ["commercials"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
+  { slug: "daydreaming", title: "Daydreaming", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild3337-3932-4138-b031-623461643534/Screenshot_2024-01-2.png" },
+  { slug: "watercolor", title: "Watercolor", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild6537-6637-4863-b030-376239343132/Screenshot_2024-01-2.png" },
+  { slug: "karmel", title: "Karmel", categories: ["commercials", "reels"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
   { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
-  { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
-  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
-  { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
-  { slug: "std", title: "STD", categories: ["fashion"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
-  { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
-  { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
-  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
+  { slug: "flowers", title: "Flowers", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
+  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
+  { slug: "mavlet", title: "Mavlet", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
+  { slug: "std", title: "STD", categories: ["fashion", "photo"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
+  { slug: "buro", title: "Buro", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
+  { slug: "geegun", title: "Geegun", categories: ["music", "commercials", "reels"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
+  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
 ];
 
 const projectDetails = {

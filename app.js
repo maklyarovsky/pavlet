@@ -57,7 +57,7 @@ function renderWorks() {
 function renderRubrics() {
   rubricGrid.innerHTML = rubrics.map((rubric) => {
     const items = works.filter((work) => work.categories.includes(rubric.id));
-    const cover = items[0];
+    const cover = items[0] || works[0];
 
     return `
       <section class="rubric-card" id="${escapeHtml(rubric.id)}">
