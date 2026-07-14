@@ -10,6 +10,7 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
   { slug: "elle", title: "Elle", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
   { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
@@ -42,6 +43,21 @@ const works = [
 ];
 
 const projectDetails = {
+  "pketar-catch-em-all": {
+    "title": "Pketar x Others \"catch 'em all\"",
+    "description": "AI photo series for Pketar x Others",
+    "embeds": [],
+    "videoLinks": [],
+    "gallery": [
+      "assets/images/pketar-catch-em-all-01.jpg",
+      "assets/images/pketar-catch-em-all-02.png",
+      "assets/images/pketar-catch-em-all-03.jpg",
+      "assets/images/pketar-catch-em-all-04.jpg",
+      "assets/images/pketar-catch-em-all-05.jpg",
+      "assets/images/pketar-catch-em-all-06.jpg",
+      "assets/images/pketar-catch-em-all-07.png"
+    ]
+  },
   "daena": {
     "title": "Daena — Hadiyca",
     "description": "Musc video based on Chechen legend\nproduced & directed by Zaidat Gamzabekova, Daria Gratilova, Pavel Maklyarovsky\nDOP, light, edit Pavel Maklyarovsky\nstyle Makka Idigova\nmodels Daena Tsatsaeva, Ilona Pskhatsieva\ntitles Ama Satueva\nbrands Antalvala, Gerem, Kubachijewel, Posleslovie",
