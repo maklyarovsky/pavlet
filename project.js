@@ -114,7 +114,7 @@ function renderGallery() {
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
-      <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}${reelsProject ? " data-reels-project=\"true\"" : ""}>
+      <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}${reelsProject ? " data-reels-project=\"true\"" : ""}${details.galleryAspect ? ` data-gallery-aspect="${escapeHtml(details.galleryAspect)}"` : ""}>
         ${images.map((image, index) => `
           <figure${wideGalleryItems.has(index) ? " data-wide=\"true\"" : ""}>
             <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">

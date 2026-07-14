@@ -10,6 +10,7 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01.gif" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
   { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
@@ -46,6 +47,21 @@ const works = [
 ];
 
 const projectDetails = {
+  "roberto-cavalli-mfw": {
+    "title": "Roberto Cavalli Milan Fashion Week",
+    "description": "brand [**Roberto Cavalli**](https://www.robertocavalli.com/)\nbrief short video with an [**influencer**](https://www.instagram.com/kategusar?igsh=MWpjZWluMnBrbGpnbQ==) during Milan fashion week",
+    "embeds": [],
+    "videoLinks": [],
+    "galleryAspect": "four-five",
+    "gallery": [
+      "assets/images/roberto-cavalli-mfw-01.gif",
+      "assets/images/roberto-cavalli-mfw-02.jpg",
+      "assets/images/roberto-cavalli-mfw-03.jpg",
+      "assets/images/roberto-cavalli-mfw-04.jpg",
+      "assets/images/roberto-cavalli-mfw-05.jpg",
+      "assets/images/roberto-cavalli-mfw-06.jpg"
+    ]
+  },
   "la-lettre-perfumes": {
     "title": "Visuals for La Lettre perfumes",
     "description": "brand [**La Lettre**](https://lalettre-parfum.com/)\nbrief short campaign videos",
