@@ -103,10 +103,11 @@ function renderVideo() {
 function renderGallery() {
   const images = (details.gallery || []).filter(Boolean);
   if (!images.length) return "";
+  const photoProject = (work.categories || []).includes("photo");
 
   return `
     <section class="project-gallery-section" aria-label="Project stills">
-      <div class="project-gallery" data-count="${images.length}">
+      <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}>
         ${images.map((image, index) => `
           <figure>
             <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
