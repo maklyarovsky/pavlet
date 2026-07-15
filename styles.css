@@ -562,6 +562,11 @@ h2 {
   object-fit: cover;
 }
 
+.project-featured-gif[data-featured-aspect="wide"] {
+  max-width: 460px;
+  aspect-ratio: 16 / 9;
+}
+
 .project-featured-copy .project-description {
   max-width: 620px;
 }

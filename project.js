@@ -134,7 +134,7 @@ function renderFeaturedGifLayout() {
 
   return `
     <section class="project-featured-media" aria-label="Project overview">
-      <figure class="project-featured-gif">
+      <figure class="project-featured-gif"${details.featuredAspect ? ` data-featured-aspect="${escapeHtml(details.featuredAspect)}"` : ""}>
         <img src="${escapeHtml(featuredImage)}" alt="${escapeHtml(work.title)} moving preview">
       </figure>
       <div class="project-featured-copy">

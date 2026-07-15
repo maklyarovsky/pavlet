@@ -116,7 +116,9 @@ const projectDetails = {
     "description": "brand [**La Lettre**](https://lalettre-parfum.com/)\nbrief short campaign videos",
     "embeds": [],
     "videoLinks": [],
-    "wideGalleryItems": [0],
+    "layout": "featured-gif",
+    "featuredAspect": "wide",
+    "galleryAspect": "four-five",
     "gallery": [
       "assets/images/la-lettre-perfumes-01.gif",
       "assets/images/la-lettre-perfumes-02.jpg",
