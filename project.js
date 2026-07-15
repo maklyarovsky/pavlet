@@ -76,7 +76,7 @@ function formatDescriptionLine(line) {
   creditRoles.forEach((role) => {
     const escapedRole = escapeHtml(role);
     const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ]|&quot;|«|\\[))`, "g");
-    output = output.replace(pattern, "$1<strong>$2</strong>");
+    output = output.replace(pattern, `$1<span class="project-label project-role">$2</span>`);
   });
 
   output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
