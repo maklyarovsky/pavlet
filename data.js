@@ -10,6 +10,7 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "more-is-love", title: "More is love", categories: ["reels", "fashion"], image: "assets/images/more-is-love-01.gif" },
   { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
   { slug: "variso-lookbook", title: "Lookbook for Variso", categories: ["reels", "fashion"], image: "assets/images/variso-lookbook-01.gif" },
   { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01.gif" },
@@ -49,6 +50,21 @@ const works = [
 ];
 
 const projectDetails = {
+  "more-is-love": {
+    "title": "More is love",
+    "description": "brand [**More is love**](https://moreislove.com/)\nbrief short video with an influencer showing clothes and accessories",
+    "embeds": [],
+    "videoLinks": [],
+    "galleryAspect": "four-five",
+    "gallery": [
+      "assets/images/more-is-love-01.gif",
+      "assets/images/more-is-love-02.png",
+      "assets/images/more-is-love-03.png",
+      "assets/images/more-is-love-04.png",
+      "assets/images/more-is-love-05.png",
+      "assets/images/more-is-love-06.png"
+    ]
+  },
   "bork-commercial": {
     "title": "Commercial for Bork",
     "description": "brand [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine",
