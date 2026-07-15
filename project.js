@@ -49,7 +49,6 @@ const creditRoles = [
   "brand",
   "assist",
   "light",
-  "video",
   "color",
   "sound",
   "music",
