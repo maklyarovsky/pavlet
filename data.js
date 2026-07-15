@@ -133,6 +133,8 @@ const projectDetails = {
     "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Alekó**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring",
     "embeds": [],
     "videoLinks": [],
+    "layout": "featured-gif",
+    "galleryAspect": "four-five",
     "gallery": [
       "assets/images/alfa-bank-commercial-01.gif",
       "assets/images/alfa-bank-commercial-02.jpg",
