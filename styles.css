@@ -287,7 +287,8 @@ h2 {
 
 .rubric-tab {
   flex: 0 0 auto;
-  color: var(--accent);
+  position: relative;
+  color: #fff;
   font-size: clamp(13px, 1.15vw, 18px);
   font-weight: 300;
   line-height: 1;
@@ -298,9 +299,28 @@ h2 {
     transform 0.45s cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
-.rubric-tab:hover {
-  color: var(--muted);
+.rubric-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.32em;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.45s cubic-bezier(0.2, 0.72, 0.18, 1);
+}
+
+.rubric-tab:hover,
+.rubric-tab:focus-visible {
+  color: var(--accent);
   transform: translateY(-2px);
+}
+
+.rubric-tab:hover::after,
+.rubric-tab:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .rubric-tab:focus-visible {
