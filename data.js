@@ -200,7 +200,7 @@ const projectDetails = {
   },
   "elle": {
     "title": "VintageDream for Elle Russia",
-    "description": "story\nphoto Anna Antosik style Ekaterina Kassina model Elena Chebotova muah Oksana Laskina set-design Kristina Nekrasova light Pavel Pankratov, Anna Kaganovich style assist Polina Chernina video Pavel Maklyarovsky",
+    "description": "photo Anna Antosik style Ekaterina Kassina model Elena Chebotova muah Oksana Laskina set-design Kristina Nekrasova light Pavel Pankratov, Anna Kaganovich style assist Polina Chernina video Pavel Maklyarovsky",
     "embeds": [
       "https://player.vimeo.com/video/489557922?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],

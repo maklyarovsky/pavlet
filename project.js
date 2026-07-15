@@ -78,6 +78,7 @@ function formatDescriptionLine(line) {
     const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ]|&quot;|«|\\[))`, "g");
     output = output.replace(pattern, `$1<span class="project-label project-role">$2</span>`);
   });
+  output = output.replace(/(^|\s)(video)(?=\s+Pavel Maklyarovsky)/g, `$1<span class="project-label project-role">$2</span>`);
 
   output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
     const linkLabel = label.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
