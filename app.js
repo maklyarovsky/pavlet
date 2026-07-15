@@ -55,21 +55,11 @@ function renderWorks() {
 }
 
 function renderRubrics() {
-  rubricGrid.innerHTML = rubrics.map((rubric) => {
-    const items = works.filter((work) => work.categories.includes(rubric.id));
-    const cover = items[0] || works[0];
-
-    return `
-      <section class="rubric-card" id="${escapeHtml(rubric.id)}">
-        <a href="#works" data-rubric-link="${escapeHtml(rubric.id)}">
-          <img class="card-image" src="${escapeHtml(cover.image)}" alt="${escapeHtml(rubric.title)}" loading="lazy">
-          <div class="rubric-copy">
-            <h2>${escapeHtml(rubric.title)}</h2>
-          </div>
-        </a>
-      </section>
-    `;
-  }).join("");
+  rubricGrid.innerHTML = rubrics.map((rubric) => `
+    <a class="rubric-tab" href="#works" data-rubric-link="${escapeHtml(rubric.id)}" id="${escapeHtml(rubric.id)}">
+      ${escapeHtml(rubric.title)}
+    </a>
+  `).join("");
 }
 
 function setRubric(rubric) {

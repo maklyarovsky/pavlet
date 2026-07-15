@@ -254,49 +254,20 @@ h2 {
 }
 
 .rubrics {
-  padding: clamp(6px, 1.4vw, 18px) clamp(10px, 2vw, 24px) clamp(12px, 2vw, 24px);
+  padding: clamp(8px, 1.5vw, 18px) clamp(24px, 5vw, 72px) clamp(22px, 3vw, 38px);
 }
 
 .rubric-grid {
   display: flex;
-  align-items: stretch;
-  gap: 8px;
+  align-items: center;
+  gap: clamp(18px, 3.2vw, 48px);
   overflow-x: auto;
   scrollbar-width: none;
+  white-space: nowrap;
 }
 
 .rubric-grid::-webkit-scrollbar {
   display: none;
-}
-
-.rubric-card {
-  position: relative;
-  flex: 0 0 clamp(128px, 12vw, 190px);
-  aspect-ratio: 16 / 7;
-  min-height: 0;
-  overflow: hidden;
-  background: #101010;
-  isolation: isolate;
-  align-self: start;
-}
-
-.rubric-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-
-.rubric-card::after {
-  background:
-    linear-gradient(180deg, rgba(122, 76, 255, 0), rgba(122, 76, 255, 0)),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.78));
-  pointer-events: none;
-  transition: background 0.25s ease;
-  z-index: 1;
-}
-
-.rubric-card .card-image {
-  filter: grayscale(0.2) brightness(0.72);
 }
 
 .work-card:hover .card-image {
@@ -314,42 +285,27 @@ h2 {
   color: var(--muted);
 }
 
-.rubric-card:hover .card-image {
-  filter: grayscale(0.05) brightness(0.86) saturate(1.12);
-}
-
-.rubric-card:hover::after {
-  background:
-    linear-gradient(180deg, rgba(122, 76, 255, 0.32), rgba(122, 76, 255, 0.64)),
-    linear-gradient(180deg, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.58));
-}
-
-.rubric-card a {
-  display: block;
-  position: relative;
-}
-
-.rubric-copy {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  text-align: center;
-}
-
-.rubric-card h2 {
-  font-size: clamp(12px, 1vw, 16px);
-  line-height: 1;
+.rubric-tab {
+  flex: 0 0 auto;
   color: var(--accent);
-  white-space: nowrap;
-  transition: color 0.2s ease;
+  font-size: clamp(18px, 2vw, 32px);
+  font-weight: 300;
+  line-height: 1;
+  text-transform: lowercase;
+  transition:
+    color 0.45s ease,
+    opacity 0.45s ease,
+    transform 0.45s cubic-bezier(0.2, 0.72, 0.18, 1);
 }
 
-.rubric-card:hover h2 {
+.rubric-tab:hover {
   color: var(--muted);
+  transform: translateY(-2px);
+}
+
+.rubric-tab:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 8px;
 }
 
 .about {
@@ -726,7 +682,6 @@ h2 {
     min-height: calc(100svh - 74px);
   }
 
-  .rubric-grid,
   .about,
   .project-intro,
   .project-featured-media,
