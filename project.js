@@ -125,6 +125,37 @@ function renderGallery() {
   `;
 }
 
+function renderFeaturedGifLayout() {
+  if (details.layout !== "featured-gif") return "";
+
+  const images = (details.gallery || []).filter(Boolean);
+  const [featuredImage, ...stills] = images;
+  if (!featuredImage) return "";
+
+  return `
+    <section class="project-featured-media" aria-label="Project overview">
+      <figure class="project-featured-gif">
+        <img src="${escapeHtml(featuredImage)}" alt="${escapeHtml(work.title)} moving preview">
+      </figure>
+      <div class="project-featured-copy">
+        ${renderDescription(details.description)}
+        ${renderProjectActions()}
+      </div>
+    </section>
+    ${stills.length ? `
+      <section class="project-gallery-section project-gallery-section--compact" aria-label="Project stills">
+        <div class="project-gallery project-gallery--compact-row" data-count="${stills.length}"${details.galleryAspect ? ` data-gallery-aspect="${escapeHtml(details.galleryAspect)}"` : ""}>
+          ${stills.map((image, index) => `
+            <figure>
+              <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
+            </figure>
+          `).join("")}
+        </div>
+      </section>
+    ` : ""}
+  `;
+}
+
 function relatedWorks() {
   const categorySet = new Set(work.categories || []);
 
@@ -191,6 +222,7 @@ function renderProjectActions() {
 
 const title = details.title || work.title;
 document.title = `Pavlet — ${title}`;
+const featuredGifLayout = renderFeaturedGifLayout();
 
 page.innerHTML = `
   <section class="project-hero">
@@ -201,10 +233,12 @@ page.innerHTML = `
     </div>
   </section>
   ${renderVideo()}
-  <section class="project-intro">
-    ${renderDescription(details.description)}
-    ${renderProjectActions()}
-  </section>
-  ${renderGallery()}
+  ${featuredGifLayout || `
+    <section class="project-intro">
+      ${renderDescription(details.description)}
+      ${renderProjectActions()}
+    </section>
+    ${renderGallery()}
+  `}
   ${renderRelated()}
 `;

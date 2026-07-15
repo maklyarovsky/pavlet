@@ -55,6 +55,7 @@ const projectDetails = {
     "description": "brand [**More is love**](https://moreislove.com/)\nbrief short video with an influencer showing clothes and accessories",
     "embeds": [],
     "videoLinks": [],
+    "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
       "assets/images/more-is-love-01.gif",
