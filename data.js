@@ -574,7 +574,7 @@ const projectDetails = {
   },
   "flowers": {
     "title": "Flowers will be blooming here anyway",
-    "description": "videoart\nmodel Maral Fatalieva",
+    "description": "model Maral Fatalieva",
     "embeds": [
       "https://player.vimeo.com/video/990550757?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
