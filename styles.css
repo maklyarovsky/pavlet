@@ -42,7 +42,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: clamp(18px, 3vw, 42px);
   min-height: 132px;
   padding: 18px clamp(22px, 4vw, 60px);
   background: rgba(0, 0, 0, 0.86);
@@ -54,12 +54,21 @@ img {
   height: auto;
 }
 
-nav {
+.site-nav {
   display: flex;
-  gap: clamp(18px, 4vw, 44px);
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: clamp(12px, 2.2vw, 34px);
 }
 
-nav a,
+.site-nav a {
+  color: var(--muted);
+  font-size: clamp(11px, 0.92vw, 15px);
+  font-weight: 300;
+  transition: color 0.35s ease;
+}
+
 .about-links a,
 .footer-contacts a {
   color: var(--muted);
@@ -68,7 +77,7 @@ nav a,
   transition: color 0.35s ease;
 }
 
-nav a:hover,
+.site-nav a:hover,
 .about-links a:hover,
 .footer-contacts a:hover {
   color: var(--accent);
@@ -701,11 +710,17 @@ h2 {
 
 @media (max-width: 760px) {
   .site-header {
+    align-items: flex-start;
+    flex-direction: column;
     min-height: 102px;
   }
 
   .wordmark img {
     width: 230px;
+  }
+
+  .site-nav {
+    justify-content: flex-start;
   }
 
   .hero {

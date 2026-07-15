@@ -1,8 +1,9 @@
 const filters = document.querySelector("#filters");
 const grid = document.querySelector("#workGrid");
-const rubricGrid = document.querySelector("#rubricGrid");
+const worksSection = document.querySelector("#works");
+const initialRubric = new URLSearchParams(window.location.search).get("rubric");
 
-let activeRubric = "all";
+let activeRubric = rubrics.some((rubric) => rubric.id === initialRubric) ? initialRubric : "all";
 
 function categoryLabel(ids) {
   return ids.map((id) => rubrics.find((rubric) => rubric.id === id)?.title || id).join(" / ");
@@ -54,14 +55,6 @@ function renderWorks() {
   `).join("");
 }
 
-function renderRubrics() {
-  rubricGrid.innerHTML = rubrics.map((rubric) => `
-    <a class="rubric-tab" href="#works" data-rubric-link="${escapeHtml(rubric.id)}" id="${escapeHtml(rubric.id)}">
-      ${escapeHtml(rubric.title)}
-    </a>
-  `).join("");
-}
-
 function setRubric(rubric) {
   activeRubric = rubric;
   renderFilters();
@@ -76,12 +69,14 @@ if (filters) {
   });
 }
 
-rubricGrid.addEventListener("click", (event) => {
+document.addEventListener("click", (event) => {
   const link = event.target.closest("[data-rubric-link]");
   if (!link) return;
+
+  event.preventDefault();
   setRubric(link.dataset.rubricLink);
+  worksSection?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 renderFilters();
 renderWorks();
-renderRubrics();
