@@ -260,7 +260,7 @@ h2 {
 .rubric-grid {
   display: flex;
   align-items: center;
-  gap: clamp(18px, 3.2vw, 48px);
+  gap: clamp(14px, 2.4vw, 34px);
   overflow-x: auto;
   scrollbar-width: none;
   white-space: nowrap;
@@ -288,7 +288,7 @@ h2 {
 .rubric-tab {
   flex: 0 0 auto;
   color: var(--accent);
-  font-size: clamp(18px, 2vw, 32px);
+  font-size: clamp(13px, 1.15vw, 18px);
   font-weight: 300;
   line-height: 1;
   text-transform: lowercase;
