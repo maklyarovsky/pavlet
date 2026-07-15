@@ -10,6 +10,8 @@ const rubrics = [
 ];
 
 const works = [
+  { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
+  { slug: "variso-lookbook", title: "Lookbook for Variso", categories: ["reels", "fashion"], image: "assets/images/variso-lookbook-01.gif" },
   { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01.gif" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
   { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
@@ -47,6 +49,36 @@ const works = [
 ];
 
 const projectDetails = {
+  "bork-commercial": {
+    "title": "Commercial for Bork",
+    "description": "brand [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine",
+    "embeds": [],
+    "videoLinks": [],
+    "gallery": [
+      "assets/images/bork-commercial-01.gif",
+      "assets/images/bork-commercial-02.png",
+      "assets/images/bork-commercial-03.png",
+      "assets/images/bork-commercial-04.png",
+      "assets/images/bork-commercial-05.png",
+      "assets/images/bork-commercial-06.png"
+    ]
+  },
+  "variso-lookbook": {
+    "title": "Lookbook for Variso",
+    "description": "brand [**Variso**](https://www.instagram.com/_variso_/#)\nbrief series of short videos showing product",
+    "embeds": [],
+    "videoLinks": [],
+    "wideGalleryItems": [0],
+    "gallery": [
+      "assets/images/variso-lookbook-01.gif",
+      "assets/images/variso-lookbook-02.jpg",
+      "assets/images/variso-lookbook-03.jpg",
+      "assets/images/variso-lookbook-04.jpg",
+      "assets/images/variso-lookbook-05.png",
+      "assets/images/variso-lookbook-06.png",
+      "assets/images/variso-lookbook-07.png"
+    ]
+  },
   "roberto-cavalli-mfw": {
     "title": "Roberto Cavalli Milan Fashion Week",
     "description": "brand [**Roberto Cavalli**](https://www.robertocavalli.com/)\nbrief short video with an [**influencer**](https://www.instagram.com/kategusar?igsh=MWpjZWluMnBrbGpnbQ==) during Milan fashion week",

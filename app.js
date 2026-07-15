@@ -65,7 +65,6 @@ function renderRubrics() {
           <img class="card-image" src="${escapeHtml(cover.image)}" alt="${escapeHtml(rubric.title)}" loading="lazy">
           <div class="rubric-copy">
             <h2>${escapeHtml(rubric.title)}</h2>
-            <p>${escapeHtml(rubric.note)}</p>
           </div>
         </a>
       </section>
