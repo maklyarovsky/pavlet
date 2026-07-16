@@ -41,7 +41,7 @@ const works = [
   { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
   { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
   { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
-  { slug: "std", title: "STD", categories: ["fashion", "photo"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
+  { slug: "std", title: "STD", categories: ["fashion"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
   { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
   { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
