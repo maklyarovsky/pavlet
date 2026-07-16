@@ -50,7 +50,7 @@ img {
 }
 
 .wordmark img {
-  width: clamp(300px, 24vw, 480px);
+  width: clamp(390px, 29vw, 590px);
   height: auto;
 }
 
@@ -815,7 +815,7 @@ h2 {
   }
 
   .wordmark img {
-    width: 230px;
+    width: min(82vw, 320px);
   }
 
   .site-nav {
