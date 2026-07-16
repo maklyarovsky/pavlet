@@ -378,6 +378,63 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
+.about-visual {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.about-portrait {
+  position: relative;
+  width: min(100%, 380px);
+  margin: 0;
+  overflow: hidden;
+}
+
+.about-portrait::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 36%, rgba(0, 0, 0, 0.82) 100%);
+  pointer-events: none;
+}
+
+.about-portrait img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-portrait figcaption {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  left: 18px;
+  z-index: 1;
+}
+
+.about-portrait h2 {
+  color: #fff;
+  font-size: clamp(25px, 3.2vw, 46px);
+  font-weight: 600;
+  line-height: 0.98;
+}
+
+.about-roles {
+  display: grid;
+  gap: 1px;
+  margin: 12px 0 0;
+}
+
+.about-roles strong {
+  display: block;
+  color: var(--accent);
+  font-size: clamp(13px, 1.35vw, 19px);
+  font-weight: 700;
+  line-height: 1.18;
+}
+
 .about-copy {
   display: grid;
   gap: 14px;
@@ -822,62 +879,15 @@ h2 {
     align-items: start;
     flex-direction: column;
   }
+
+  .about-portrait {
+    width: min(100%, 320px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   * {
     scroll-behavior: auto !important;
     transition: none !important;
-  }
-}
-.home-profile {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 340px);
-  align-items: start;
-  gap: clamp(28px, 5vw, 76px);
-  width: min(1120px, calc(100% - 48px));
-  margin: clamp(88px, 12vw, 160px) auto clamp(80px, 10vw, 140px);
-  color: #d2d2d2;
-}
-
-.home-profile__title {
-  margin: 0;
-  max-width: 660px;
-  font-size: clamp(40px, 5.3vw, 86px);
-  line-height: 0.98;
-  font-weight: 800;
-  letter-spacing: 0;
-}
-
-.home-profile__title span,
-.home-profile__title strong {
-  display: block;
-}
-
-.home-profile__title span {
-  color: #d0d0d0;
-}
-
-.home-profile__title strong {
-  color: var(--accent, #7a4cff);
-}
-
-.home-profile__portrait {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-@media (max-width: 760px) {
-  .home-profile {
-    grid-template-columns: 1fr;
-    width: min(100% - 32px, 560px);
-    margin-top: 72px;
-  }
-
-  .home-profile__portrait {
-    width: min(280px, 70vw);
   }
 }
