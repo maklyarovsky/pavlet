@@ -17,14 +17,16 @@ function escapeHtml(value) {
 }
 
 const creditRoles = [
+  "photo & art direction",
+  "Director, DOP, concept",
+  "producer and casting",
   "produced & directed by",
   "produced & directed",
   "director & DOP",
-  "Director, DOP, concept",
-  "producer and casting",
   "DOP, director",
   "DOP, light, edit",
   "production assists",
+  "style&model",
   "produced by",
   "style assist",
   "set-design",
@@ -40,6 +42,7 @@ const creditRoles = [
   "editing",
   "colorist",
   "brief",
+  "client",
   "photo",
   "style",
   "models",
@@ -51,8 +54,10 @@ const creditRoles = [
   "light",
   "color",
   "sound",
+  "starring",
   "music",
   "prod",
+  "dir",
   "dress",
   "mua",
   "muah",
@@ -62,11 +67,11 @@ const creditRoles = [
   "DOP",
   "DP",
   "VFX"
-];
+].sort((a, b) => b.length - a.length);
 
 function formatDescriptionLine(line) {
   let output = escapeHtml(line);
-  const labelPattern = /^(brand|brief)(?=\s+)/i;
+  const labelPattern = /^(brand|brief|client)(?=\s+)/i;
   const labelMatch = output.match(labelPattern);
 
   if (labelMatch) {
@@ -75,7 +80,7 @@ function formatDescriptionLine(line) {
 
   creditRoles.forEach((role) => {
     const escapedRole = escapeHtml(role);
-    const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ]|&quot;|«|\\[))`, "g");
+    const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ0-9]|&quot;|«|\\[|\\*))`, "g");
     output = output.replace(pattern, `$1<span class="project-label project-role">$2</span>`);
   });
   output = output.replace(/^(video)(?=\s+)/, `<span class="project-label project-role">$1</span>`);
@@ -84,6 +89,7 @@ function formatDescriptionLine(line) {
     const linkLabel = label.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     return `<a href="${escapeHtml(url)}" rel="noopener">${linkLabel}</a>`;
   });
+  output = output.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 
   return output;
 }

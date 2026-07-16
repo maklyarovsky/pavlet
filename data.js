@@ -11,10 +11,10 @@ const rubrics = [
 
 const works = [
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
-  { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
-  { slug: "elle", title: "Elle", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
+  { slug: "elle", title: "Elle", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
   { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
+  { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
   { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01.gif" },
   { slug: "caspian", title: "Caspian", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3039-3563-4361-b732-353662663031/Screenshot_2024-01-1.png" },
   { slug: "flat22", title: "Flat22", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3663-6531-4565-b735-616131343961/Screenshot_2024-01-1.png" },
@@ -39,14 +39,14 @@ const works = [
   { slug: "karmel", title: "Karmel", categories: ["commercials", "reels"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
   { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
   { slug: "flowers", title: "Flowers", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
-  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
-  { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
+  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
   { slug: "mavlet", title: "Mavlet", categories: ["videoart", "ai"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
   { slug: "std", title: "STD", categories: ["fashion", "photo"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
-  { slug: "buro", title: "Buro", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
+  { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
+  { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
   { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
-  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
+  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
 ];
 
 const projectDetails = {
@@ -68,9 +68,12 @@ const projectDetails = {
   },
   "bork-commercial": {
     "title": "Commercial for Bork",
-    "description": "brand [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine",
+    "description": "brand [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine\nprod Aleko team\nDOP Aleko team\ndir Pavel Maklyarovsky",
     "embeds": [],
     "videoLinks": [],
+    "layout": "featured-gif",
+    "featuredAspect": "wide",
+    "galleryAspect": "four-five",
     "gallery": [
       "assets/images/bork-commercial-01.gif",
       "assets/images/bork-commercial-02.png",
@@ -82,10 +85,12 @@ const projectDetails = {
   },
   "variso-lookbook": {
     "title": "Lookbook for Variso",
-    "description": "brand [**Variso**](https://www.instagram.com/_variso_/#)\nbrief series of short videos showing product",
+    "description": "brand [**Variso**](https://www.instagram.com/_variso_/#)\nbrief series of short videos showing product\nprod Saida Nazarova\nstyle Madina Varisova",
     "embeds": [],
     "videoLinks": [],
-    "wideGalleryItems": [0],
+    "layout": "featured-gif",
+    "featuredAspect": "wide",
+    "galleryAspect": "four-five",
     "gallery": [
       "assets/images/variso-lookbook-01.gif",
       "assets/images/variso-lookbook-02.jpg",
@@ -101,6 +106,7 @@ const projectDetails = {
     "description": "brand [**Roberto Cavalli**](https://www.robertocavalli.com/)\nbrief short video with an [**influencer**](https://www.instagram.com/kategusar?igsh=MWpjZWluMnBrbGpnbQ==) during Milan fashion week",
     "embeds": [],
     "videoLinks": [],
+    "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
       "assets/images/roberto-cavalli-mfw-01.gif",
@@ -130,7 +136,7 @@ const projectDetails = {
   },
   "alfa-bank-commercial": {
     "title": "Alfa Bank commercial",
-    "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Alekó**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring",
+    "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Aleko**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring\nproduced by Aleko team\nsound Ekaterina Druzhinina\nVFX Islam Ayubi",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
@@ -146,9 +152,11 @@ const projectDetails = {
   },
   "lancome-bafta-bts": {
     "title": "BAFTA BTS for Lancome",
-    "description": "brand [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome",
+    "description": "brand [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome\nprod fashion2max",
     "embeds": [],
     "videoLinks": [],
+    "layout": "featured-gif",
+    "galleryAspect": "four-five",
     "gallery": [
       "assets/images/lancome-bafta-bts-01.gif",
       "assets/images/lancome-bafta-bts-02.jpg",
@@ -177,7 +185,7 @@ const projectDetails = {
   },
   "daena": {
     "title": "Daena — Hadiyca",
-    "description": "Musc video based on Chechen legend\nproduced & directed by Zaidat Gamzabekova, Daria Gratilova, Pavel Maklyarovsky\nDOP, light, edit Pavel Maklyarovsky\nstyle Makka Idigova\nmodels Daena Tsatsaeva, Ilona Pskhatsieva\ntitles Ama Satueva\nbrands Antalvala, Gerem, Kubachijewel, Posleslovie",
+    "description": "Music video based on a Chechen legend\nproduced & directed by Zaidat Gamzabekova, Daria Gratilova, Pavel Maklyarovsky\nDOP, light, edit Pavel Maklyarovsky\nstyle Makka Idigova\nmodels Daena Tsatsaeva, Ilona Pskhatsieva\ntitles Ama Satueva\nbrands Antalvala, Gerem, Kubachijewel, Posleslovie",
     "embeds": [
       "https://www.youtube.com/embed/-URq7PZrf9I?rel=0&fmt=18&html5=1&showinfo=0"
     ],
@@ -236,7 +244,7 @@ const projectDetails = {
   },
   "caspian": {
     "title": "\"The Caspian\"",
-    "description": "Short film in a collaboration with local clothing brand, dedicated to eclecticism of the capital of Dagestan. Inspired by soviet architecture, music, patriotic documentaries and islamic influence\nbrand Oth.ers style Zaynab Saydulaeva model Sarra Akhmedova",
+    "description": "Short film in a collaboration with local clothing brand, dedicated to eclecticism of the capital of Dagestan. Inspired by soviet architecture, music, patriotic documentaries and islamic influence\nbrand **Oth.ers**\nstyle Zaynab Saydulaeva\nmodel Sarra Akhmedova",
     "embeds": [
       "https://player.vimeo.com/video/459276791?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -307,7 +315,7 @@ const projectDetails = {
   },
   "measureanji": {
     "title": "Measure — Anzhi",
-    "description": "Fashion video\nproduced by Measure\nDOP, director Pavel Maklyarovsky\nstyle Zaynab Saidulaeva\nmodels Aminat Ibragimova, Patimat Sultanbagamaeva\nassist Muslimat\nhttps://measure-online.com/anji-kala",
+    "description": "produced by [**Measure**](https://measure-online.com/anji-kala)\nDOP, director Pavel Maklyarovsky\nstyle Zaynab Saidulaeva\nmodels Aminat Ibragimova, Patimat Sultanbagamaeva\nassist Muslimat",
     "embeds": [
       "https://player.vimeo.com/video/1061824671?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -326,7 +334,7 @@ const projectDetails = {
   },
   "donutsday": {
     "title": "\"The Era of More Intensive Observation of the Sky\" — Donutsday commercial",
-    "description": "Commercial video for Donutsday\nproducer and casting Uma Magadova\nDirector, DOP, concept Pavel Maklyarovsky\nstyle Hava\nstyle assist Abdi\nmodels Anna Yudakova, Sasha, Open Up Model Management\nproduction assists Nozya, Dzhuma\nmakeup, hair Julia Tingaeva\ngaffer Yaroslav",
+    "description": "client Donutsday\nproducer and casting Uma Magadova\nDirector, DOP, concept Pavel Maklyarovsky\nstyle Hava\nstyle assist Abdi\nmodels Anna Yudakova, Sasha, Open Up Model Management\nproduction assists Nozya, Dzhuma\nmakeup, hair Julia Tingaeva\ngaffer Yaroslav",
     "embeds": [
       "https://player.vimeo.com/video/1177690385?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -417,7 +425,7 @@ const projectDetails = {
   },
   "qhuaua": {
     "title": "JRPJEJ — Qhuaua E Ored music video",
-    "description": "Music video for circassian post-traditional band «JRPJEJ» on \"The Boar and The Hunter\" song, using digital interpretations of an old circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage museum and partner institutions.\nhttps://russianartarchive.net/ru/catalogue/document/V14460",
+    "description": "Music video for Circassian post-traditional band «JRPJEJ» on \"The Boar and The Hunter\" song, using digital interpretations of old Circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage Museum and partner institutions.\nprod Ored Recordings\n[Russian Art Archive Network](https://russianartarchive.net/ru/catalogue/document/V14460)",
     "embeds": [
       "https://player.vimeo.com/video/361296474?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -436,7 +444,7 @@ const projectDetails = {
   },
   "followmeto": {
     "title": "#followmeto Mercedes-Benz Fashion Week Tbilisi",
-    "description": "video for Followmeto project\nhttps://followmetotravel.com/en/fashion_week_in_tb...",
+    "description": "video for [**FollowMeTo**](https://www.instagram.com/followmeto/?hl=en)\nstarring [**Nataly Osmann**](https://www.instagram.com/natalyosmann/?hl=en)",
     "embeds": [
       "https://player.vimeo.com/video/381445129?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -471,7 +479,7 @@ const projectDetails = {
   },
   "subay": {
     "title": "\"Windy\" for Subay store",
-    "description": "Commercial for karachai and spanish headscarves brand inspired by old westerns and karachai national dress\nbrand Subay style Ruzanna Semenova",
+    "description": "Commercial for Karachai and Spanish headscarves brand inspired by old westerns and Karachai national dress\nbrand **Subay**\nstyle&model Ruzanna Semenova",
     "embeds": [
       "https://player.vimeo.com/video/416990975?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
@@ -663,17 +671,12 @@ const projectDetails = {
       "https://www.youtube.com/embed/GjFJkxymUmo?rel=0&fmt=18&html5=1&showinfo=0"
     ],
     "videoLinks": [],
-    "gallery": [
-      "https://static.tildacdn.com/tild3264-6464-4664-a131-646237376366/IMG_6313.jpg",
-      "https://static.tildacdn.com/tild6565-3230-4633-b364-333063333532/IMG_6332.jpg",
-      "https://static.tildacdn.com/tild6231-3930-4736-b030-623932306463/IMG_6344_copy.jpg",
-      "https://static.tildacdn.com/tild3635-3763-4637-b833-313031363162/IMG_6404.jpg"
-    ],
+    "gallery": [],
     "originalUrl": "https://pavlet.ru/geegun"
   },
   "moonka": {
     "title": "Moonka store",
-    "description": "video for Moonka Store",
+    "description": "brand **Moonka**\nprod Anna Pisman, Anzhela Sarbasheva\nstyle Ibragim Gatsiev",
     "embeds": [
       "https://player.vimeo.com/video/453548289?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
