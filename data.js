@@ -22,7 +22,7 @@ const works = [
   { slug: "sildi", title: "Sildi", categories: ["commercials", "documentary"], image: "https://static.tildacdn.com/tild6333-3936-4861-b838-363435643636/Screenshot_2024-01-1.png" },
   { slug: "zabit", title: "Zabit", categories: ["commercials"], image: "https://static.tildacdn.com/tild3532-3766-4037-b635-316162366533/Screenshot_2024-07-2.png" },
   { slug: "measureanji", title: "Measure Anji", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3732-3331-4230-a132-353862303734/Screenshot_2025-03-0.png" },
-  { slug: "donutsday", title: "Donuts Day", categories: ["commercials", "reels"], image: "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg" },
+  { slug: "donutsday", title: "Donuts Day", categories: ["commercials"], image: "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg" },
   { slug: "wayhome", title: "Way Home", categories: ["videoart"], image: "https://static.tildacdn.com/tild3630-3834-4437-b863-633330393831/Screenshot_2024-01-1.png" },
   { slug: "alice", title: "Alice", categories: ["videoart"], image: "https://static.tildacdn.com/tild6434-6562-4533-b238-353066663564/Screenshot_2024-01-2.png" },
   { slug: "dagestan", title: "Dagestan", categories: ["commercials"], image: "https://static.tildacdn.com/tild3232-3932-4237-b830-666435363430/Screenshot_2024-01-1.png" },
@@ -45,7 +45,7 @@ const works = [
   { slug: "std", title: "STD", categories: ["fashion", "photo"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
   { slug: "buro", title: "Buro", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
-  { slug: "geegun", title: "Geegun", categories: ["music", "commercials", "reels"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
+  { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
   { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials", "photo"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
 ];
 
