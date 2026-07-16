@@ -377,6 +377,10 @@ h2 {
   padding: clamp(46px, 8vw, 92px) clamp(24px, 5vw, 64px);
 }
 
+.about[hidden] {
+  display: none;
+}
+
 .about-visual {
   display: grid;
   align-content: start;
