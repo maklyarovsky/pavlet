@@ -1,6 +1,7 @@
 const filters = document.querySelector("#filters");
 const grid = document.querySelector("#workGrid");
 const worksSection = document.querySelector("#works");
+const aboutSection = document.querySelector("#about");
 const initialRubric = new URLSearchParams(window.location.search).get("rubric");
 
 let activeRubric = rubrics.some((rubric) => rubric.id === initialRubric) ? initialRubric : "all";
@@ -53,6 +54,10 @@ function renderWorks() {
       </a>
     </article>
   `).join("");
+
+  if (aboutSection) {
+    aboutSection.hidden = activeRubric !== "all";
+  }
 }
 
 function setRubric(rubric) {
