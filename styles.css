@@ -408,7 +408,7 @@ h2 {
 .about-portrait figcaption {
   position: absolute;
   bottom: 8px;
-  left: calc(100% + 14px);
+  left: calc(100% - 16px);
   z-index: 1;
   width: clamp(240px, 27vw, 430px);
 }
@@ -885,7 +885,7 @@ h2 {
   }
 
   .about-portrait figcaption {
-    left: calc(100% + 10px);
+    left: calc(100% - 12px);
     width: min(78vw, 300px);
   }
 }
