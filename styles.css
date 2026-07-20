@@ -386,7 +386,7 @@ h2 {
 .about-visual {
   display: grid;
   align-content: start;
-  gap: 14px;
+  gap: clamp(36px, 4vw, 58px);
 }
 
 .about-portrait {
@@ -478,7 +478,7 @@ h2 {
 
 .education li {
   color: var(--muted);
-  font-size: clamp(12px, 1.15vw, 14px);
+  font-size: clamp(10px, 0.85vw, 12px);
   font-weight: 300;
   line-height: 1.45;
 }
