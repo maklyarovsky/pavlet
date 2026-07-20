@@ -170,7 +170,7 @@ const projectDetails = {
   },
   "pketar-catch-em-all": {
     "title": "Pketar x Others \"catch 'em all\"",
-    "description": "AI photo series for Pketar x Others",
+    "description": "AI photo series for Pketar x Others\nA reference to the Dagestani tradition of going door to door collecting sweets during the holidays of Eid al-Fitr (Uraza Bayram) and Eid al-Adha (Kurban Bayram).",
     "embeds": [],
     "videoLinks": [],
     "gallery": [
