@@ -71,7 +71,7 @@ const creditRoles = [
 
 function formatDescriptionLine(line) {
   let output = escapeHtml(line);
-  const labelPattern = /^(brand|brief|client)(?=\s+)/i;
+  const labelPattern = /^(brand|brief|client|prod)(?=\s+)/i;
   const labelMatch = output.match(labelPattern);
 
   if (labelMatch) {
