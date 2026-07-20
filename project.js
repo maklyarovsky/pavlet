@@ -123,7 +123,9 @@ function renderVideo() {
       <iframe
         src="${escapeHtml(embed)}"
         title="${escapeHtml(details.title || work.title)} video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        sandbox="allow-scripts allow-same-origin allow-presentation allow-popups"
+        referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
         loading="lazy"></iframe>
     </section>
