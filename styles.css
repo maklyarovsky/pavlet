@@ -443,7 +443,7 @@ h2 {
 
 .about-copy {
   display: grid;
-  gap: 6px;
+  gap: 2px;
   max-width: 760px;
 }
 
