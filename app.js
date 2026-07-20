@@ -83,5 +83,17 @@ document.addEventListener("click", (event) => {
   worksSection?.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
+document.addEventListener("click", (event) => {
+  const link = event.target.closest(".contacts-link");
+  if (!link || !aboutSection) return;
+
+  event.preventDefault();
+  setRubric("all");
+  window.history.replaceState(null, "", `${window.location.pathname}#about`);
+  window.requestAnimationFrame(() => {
+    aboutSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+});
+
 renderFilters();
 renderWorks();
