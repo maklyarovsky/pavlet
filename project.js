@@ -1,8 +1,14 @@
 const page = document.querySelector("#projectPage");
 const params = new URLSearchParams(window.location.search);
-const slug = params.get("slug");
+const slug = document.body.dataset.projectSlug || params.get("slug");
 const work = works.find((item) => item.slug === slug) || works[0];
 const details = projectDetails[work.slug] || {};
+
+function projectUrl(projectSlug) {
+  return window.location.protocol === "file:"
+    ? `project.html?slug=${encodeURIComponent(projectSlug)}`
+    : `/works/${encodeURIComponent(projectSlug)}/`;
+}
 
 function projectCategoryLabel(ids) {
   return ids.map((id) => rubrics.find((rubric) => rubric.id === id)?.title || id).join(" / ");
@@ -99,6 +105,19 @@ function normalizeEmbed(url) {
   return url.replace(/^http:/, "https:");
 }
 
+function isVideoAsset(url) {
+  return /\.(?:mp4|webm)(?:[?#].*)?$/i.test(url || "");
+}
+
+function renderProjectMedia(source, alt, { eager = false } = {}) {
+  if (isVideoAsset(source)) {
+    const poster = source.replace(/\.mp4(?:[?#].*)?$/i, "-poster.jpg");
+    return `<video src="${escapeHtml(source)}" poster="${escapeHtml(poster)}" aria-label="${escapeHtml(alt)}" autoplay muted loop playsinline preload="metadata"></video>`;
+  }
+
+  return `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}"${eager ? " fetchpriority=\"high\"" : " loading=\"lazy\""} decoding="async">`;
+}
+
 function renderDescription(text) {
   const lines = String(text || "")
     .split(/\n+/)
@@ -144,7 +163,7 @@ function renderGallery() {
       <div class="project-gallery" data-count="${images.length}"${photoProject ? " data-photo-project=\"true\"" : ""}${reelsProject ? " data-reels-project=\"true\"" : ""}${details.galleryAspect ? ` data-gallery-aspect="${escapeHtml(details.galleryAspect)}"` : ""}>
         ${images.map((image, index) => `
           <figure${wideGalleryItems.has(index) ? " data-wide=\"true\"" : ""}>
-            <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
+            ${renderProjectMedia(image, `${work.title} still ${index + 1}`)}
           </figure>
         `).join("")}
       </div>
@@ -162,7 +181,7 @@ function renderFeaturedGifLayout() {
   return `
     <section class="project-featured-media" aria-label="Project overview">
       <figure class="project-featured-gif"${details.featuredAspect ? ` data-featured-aspect="${escapeHtml(details.featuredAspect)}"` : ""}>
-        <img src="${escapeHtml(featuredImage)}" alt="${escapeHtml(work.title)} moving preview">
+        ${renderProjectMedia(featuredImage, `${work.title} moving preview`, { eager: true })}
       </figure>
       <div class="project-featured-copy">
         ${renderDescription(details.description)}
@@ -174,7 +193,7 @@ function renderFeaturedGifLayout() {
         <div class="project-gallery project-gallery--compact-row" data-count="${stills.length}"${details.galleryAspect ? ` data-gallery-aspect="${escapeHtml(details.galleryAspect)}"` : ""}>
           ${stills.map((image, index) => `
             <figure>
-              <img src="${escapeHtml(image)}" alt="${escapeHtml(work.title)} still ${index + 1}" loading="lazy">
+              ${renderProjectMedia(image, `${work.title} still ${index + 1}`)}
             </figure>
           `).join("")}
         </div>
@@ -210,7 +229,7 @@ function renderRelated() {
 
           return `
             <article class="related-card">
-              <a href="project.html?slug=${escapeHtml(item.slug)}">
+              <a href="${escapeHtml(projectUrl(item.slug))}">
                 <img src="${escapeHtml(item.image)}" alt="${escapeHtml(itemDetails.title || item.title)}" loading="lazy">
                 <div class="related-card-copy">
                   <p>${escapeHtml(projectCategoryLabel(item.categories))}</p>
@@ -248,7 +267,9 @@ function renderProjectActions() {
 }
 
 const title = details.title || work.title;
-document.title = `Pavlet — ${title}`;
+if (!document.body.dataset.projectSlug) {
+  document.title = `Pavlet — ${title}`;
+}
 const featuredGifLayout = renderFeaturedGifLayout();
 
 page.innerHTML = `

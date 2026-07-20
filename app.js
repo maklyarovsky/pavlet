@@ -22,6 +22,12 @@ function workDisplayTitle(work) {
   return projectDetails[work.slug]?.title || work.title;
 }
 
+function projectUrl(slug) {
+  return window.location.protocol === "file:"
+    ? `project.html?slug=${encodeURIComponent(slug)}`
+    : `/works/${encodeURIComponent(slug)}/`;
+}
+
 function renderFilters() {
   if (!filters) return;
 
@@ -44,7 +50,7 @@ function renderWorks() {
 
   grid.innerHTML = visible.map((work) => `
     <article class="work-card">
-      <a href="project.html?slug=${escapeHtml(work.slug)}" aria-label="Open ${escapeHtml(workDisplayTitle(work))}">
+      <a href="${escapeHtml(projectUrl(work.slug))}" aria-label="Open ${escapeHtml(workDisplayTitle(work))}">
         <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(workDisplayTitle(work))}" loading="lazy">
         <span class="work-meta">${escapeHtml(categoryLabel(work.categories))}</span>
         <h3>${escapeHtml(workDisplayTitle(work))}</h3>

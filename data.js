@@ -10,15 +10,15 @@ const rubrics = [
 ];
 
 const works = [
-  { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.jpg" },
+  { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.webp" },
   { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
   { slug: "elle", title: "Elle", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
   { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
-  { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01.gif" },
-  { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01.gif" },
+  { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01-poster.jpg" },
+  { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01-poster.jpg" },
   { slug: "caspian", title: "Caspian", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3039-3563-4361-b732-353662663031/Screenshot_2024-01-1.png" },
   { slug: "flat22", title: "Flat22", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3663-6531-4565-b735-616131343961/Screenshot_2024-01-1.png" },
-  { slug: "more-is-love", title: "More is love", categories: ["reels", "fashion"], image: "assets/images/more-is-love-01.gif" },
+  { slug: "more-is-love", title: "More is love", categories: ["reels", "fashion"], image: "assets/images/more-is-love-01-poster.jpg" },
   { slug: "sildi", title: "Sildi", categories: ["commercials", "documentary"], image: "https://static.tildacdn.com/tild6333-3936-4861-b838-363435643636/Screenshot_2024-01-1.png" },
   { slug: "zabit", title: "Zabit", categories: ["commercials"], image: "https://static.tildacdn.com/tild3532-3766-4037-b635-316162366533/Screenshot_2024-07-2.png" },
   { slug: "measureanji", title: "Measure Anji", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3732-3331-4230-a132-353862303734/Screenshot_2025-03-0.png" },
@@ -32,19 +32,19 @@ const works = [
   { slug: "madeinmilan", title: "Made in Milan", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6366-3330-4261-a135-303038373535/IMG_6357_copy.jpg" },
   { slug: "subay", title: "Subay", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6234-6631-4133-a563-373964386234/Screenshot_2024-01-1.png" },
   { slug: "tbilisi", title: "Tbilisi", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3263-3265-4034-b131-396538363936/Screenshot_2024-01-2.png" },
-  { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01.gif" },
+  { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01-poster.jpg" },
   { slug: "daydreaming", title: "Daydreaming", categories: ["videoart"], image: "https://static.tildacdn.com/tild3337-3932-4138-b031-623461643534/Screenshot_2024-01-2.png" },
   { slug: "watercolor", title: "Watercolor", categories: ["videoart"], image: "https://static.tildacdn.com/tild6537-6637-4863-b030-376239343132/Screenshot_2024-01-2.png" },
-  { slug: "variso-lookbook", title: "Lookbook for Variso", categories: ["reels", "fashion"], image: "assets/images/variso-lookbook-01.gif" },
+  { slug: "variso-lookbook", title: "Lookbook for Variso", categories: ["reels", "fashion"], image: "assets/images/variso-lookbook-01-poster.jpg" },
   { slug: "karmel", title: "Karmel", categories: ["commercials"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
   { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
   { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
   { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
   { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
   { slug: "std", title: "STD", categories: ["fashion"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
-  { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01.gif" },
+  { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01-poster.jpg" },
   { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
-  { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01.gif" },
+  { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01-poster.jpg" },
   { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
   { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
 ];
@@ -58,12 +58,12 @@ const projectDetails = {
     "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/more-is-love-01.gif",
-      "assets/images/more-is-love-02.png",
-      "assets/images/more-is-love-03.png",
-      "assets/images/more-is-love-04.png",
-      "assets/images/more-is-love-05.png",
-      "assets/images/more-is-love-06.png"
+      "assets/images/more-is-love-01.mp4",
+      "assets/images/more-is-love-02.webp",
+      "assets/images/more-is-love-03.webp",
+      "assets/images/more-is-love-04.webp",
+      "assets/images/more-is-love-05.webp",
+      "assets/images/more-is-love-06.webp"
     ]
   },
   "bork-commercial": {
@@ -75,12 +75,12 @@ const projectDetails = {
     "featuredAspect": "wide",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/bork-commercial-01.gif",
-      "assets/images/bork-commercial-02.png",
-      "assets/images/bork-commercial-03.png",
-      "assets/images/bork-commercial-04.png",
+      "assets/images/bork-commercial-01.mp4",
+      "assets/images/bork-commercial-02.webp",
+      "assets/images/bork-commercial-03.webp",
+      "assets/images/bork-commercial-04.webp",
       "assets/images/bork-commercial-05.png",
-      "assets/images/bork-commercial-06.png"
+      "assets/images/bork-commercial-06.webp"
     ]
   },
   "variso-lookbook": {
@@ -92,13 +92,13 @@ const projectDetails = {
     "featuredAspect": "wide",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/variso-lookbook-01.gif",
+      "assets/images/variso-lookbook-01.mp4",
       "assets/images/variso-lookbook-02.jpg",
       "assets/images/variso-lookbook-03.jpg",
       "assets/images/variso-lookbook-04.jpg",
-      "assets/images/variso-lookbook-05.png",
-      "assets/images/variso-lookbook-06.png",
-      "assets/images/variso-lookbook-07.png"
+      "assets/images/variso-lookbook-05.webp",
+      "assets/images/variso-lookbook-06.webp",
+      "assets/images/variso-lookbook-07.webp"
     ]
   },
   "roberto-cavalli-mfw": {
@@ -109,7 +109,7 @@ const projectDetails = {
     "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/roberto-cavalli-mfw-01.gif",
+      "assets/images/roberto-cavalli-mfw-01.mp4",
       "assets/images/roberto-cavalli-mfw-02.jpg",
       "assets/images/roberto-cavalli-mfw-03.jpg",
       "assets/images/roberto-cavalli-mfw-04.jpg",
@@ -126,12 +126,12 @@ const projectDetails = {
     "featuredAspect": "wide",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/la-lettre-perfumes-01.gif",
+      "assets/images/la-lettre-perfumes-01.mp4",
       "assets/images/la-lettre-perfumes-02.jpg",
       "assets/images/la-lettre-perfumes-03.jpg",
       "assets/images/la-lettre-perfumes-04.jpg",
-      "assets/images/la-lettre-perfumes-05.png",
-      "assets/images/la-lettre-perfumes-06.png"
+      "assets/images/la-lettre-perfumes-05.webp",
+      "assets/images/la-lettre-perfumes-06.webp"
     ]
   },
   "alfa-bank-commercial": {
@@ -142,12 +142,12 @@ const projectDetails = {
     "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/alfa-bank-commercial-01.gif",
+      "assets/images/alfa-bank-commercial-01.mp4",
       "assets/images/alfa-bank-commercial-02.jpg",
-      "assets/images/alfa-bank-commercial-03.png",
+      "assets/images/alfa-bank-commercial-03.webp",
       "assets/images/alfa-bank-commercial-04.jpg",
       "assets/images/alfa-bank-commercial-05.jpg",
-      "assets/images/alfa-bank-commercial-06.png"
+      "assets/images/alfa-bank-commercial-06.webp"
     ]
   },
   "lancome-bafta-bts": {
@@ -158,7 +158,7 @@ const projectDetails = {
     "layout": "featured-gif",
     "galleryAspect": "four-five",
     "gallery": [
-      "assets/images/lancome-bafta-bts-01.gif",
+      "assets/images/lancome-bafta-bts-01.mp4",
       "assets/images/lancome-bafta-bts-02.jpg",
       "assets/images/lancome-bafta-bts-03.jpg",
       "assets/images/lancome-bafta-bts-04.jpg",
@@ -174,13 +174,13 @@ const projectDetails = {
     "embeds": [],
     "videoLinks": [],
     "gallery": [
-      "assets/images/pketar-catch-em-all-01.jpg",
-      "assets/images/pketar-catch-em-all-02.png",
-      "assets/images/pketar-catch-em-all-03.jpg",
-      "assets/images/pketar-catch-em-all-04.jpg",
-      "assets/images/pketar-catch-em-all-05.jpg",
-      "assets/images/pketar-catch-em-all-06.jpg",
-      "assets/images/pketar-catch-em-all-07.png"
+      "assets/images/pketar-catch-em-all-01.webp",
+      "assets/images/pketar-catch-em-all-02.webp",
+      "assets/images/pketar-catch-em-all-03.webp",
+      "assets/images/pketar-catch-em-all-04.webp",
+      "assets/images/pketar-catch-em-all-05.webp",
+      "assets/images/pketar-catch-em-all-06.webp",
+      "assets/images/pketar-catch-em-all-07.webp"
     ]
   },
   "daena": {

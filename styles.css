@@ -129,7 +129,7 @@ img {
 .hero-media {
   position: absolute;
   inset: 0;
-  background-image: url("assets/images/home-cover.png");
+  background-image: url("assets/images/home-cover.webp");
   background-size: cover;
   background-position: center;
   transform: scale(1.02);
@@ -667,7 +667,8 @@ h2 {
   background: #101010;
 }
 
-.project-featured-gif img {
+.project-featured-gif img,
+.project-featured-gif video {
   display: block;
   width: 100%;
   height: 100%;
@@ -761,10 +762,15 @@ h2 {
   aspect-ratio: 16 / 9;
 }
 
-.project-gallery img {
+.project-gallery img,
+.project-gallery video {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.project-gallery img {
   transform: scale(1.075);
   transform-origin: center;
   color: transparent;
