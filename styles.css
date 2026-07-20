@@ -456,6 +456,16 @@ h2 {
   line-height: 1.58;
 }
 
+.about-copy a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.16em;
+}
+
+.about-copy a:hover {
+  color: var(--accent);
+}
+
 .about-links {
   display: flex;
   flex-wrap: wrap;
