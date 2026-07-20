@@ -64,6 +64,7 @@ const creditRoles = [
   "gaffer",
   "media",
   "edit",
+  "video",
   "DOP",
   "DP",
   "VFX"
@@ -83,8 +84,6 @@ function formatDescriptionLine(line) {
     const pattern = new RegExp(`(^|\\s)(${escapedRole.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")})(?=\\s+(?:[A-ZА-ЯЁ0-9]|&quot;|«|\\[|\\*))`, "g");
     output = output.replace(pattern, `$1<span class="project-label project-role">$2</span>`);
   });
-  output = output.replace(/^(video)(?=\s+)/, `<span class="project-label project-role">$1</span>`);
-
   output = output.replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, (_, label, url) => {
     const linkLabel = label.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     return `<a href="${escapeHtml(url)}" rel="noopener">${linkLabel}</a>`;
