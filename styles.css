@@ -625,6 +625,16 @@ h2 {
   font-weight: 600;
 }
 
+.project-description a {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.16em;
+}
+
+.project-description a:hover {
+  color: var(--accent);
+}
+
 .project-label {
   display: inline-block;
   margin-right: 0.22em;
