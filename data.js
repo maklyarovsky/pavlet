@@ -244,7 +244,7 @@ const projectDetails = {
   },
   "caspian": {
     "title": "\"The Caspian\"",
-    "description": "Short film in a collaboration with local clothing brand, dedicated to eclecticism of the capital of Dagestan. Inspired by soviet architecture, music, patriotic documentaries and islamic influence\nbrand **Oth.ers**\nstyle Zaynab Saydulaeva\nmodel Sarra Akhmedova",
+    "description": "Short film in a collaboration with local clothing brand, dedicated to eclecticism of the capital of Dagestan. Inspired by soviet architecture, music, patriotic documentaries and islamic influence\nclient [**Others**](https://www.instagram.com/oth.ers/)\nstyle Zaynab Saydulaeva\nmodel Sarra Akhmedova",
     "embeds": [
       "https://player.vimeo.com/video/459276791?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
