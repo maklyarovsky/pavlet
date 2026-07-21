@@ -279,7 +279,7 @@ const projectDetails = {
   },
   "sildi": {
     "title": "\"The Sildi village\" for Papakha restaurant & Khabib Nurmagomedov",
-    "description": "Short film about Sildi village, motherland of Khabib Nurmagomedov.\nprod Refine agency",
+    "description": "client [**Papakha**](https://papakha.ru/)\nShort film about Sildi village, motherland of Khabib Nurmagomedov.\nprod Refine agency",
     "embeds": [
       "https://player.vimeo.com/video/728831063?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
