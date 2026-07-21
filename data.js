@@ -103,7 +103,7 @@ const projectDetails = {
   },
   "roberto-cavalli-mfw": {
     "title": "Roberto Cavalli Milan Fashion Week",
-    "description": "client [**Roberto Cavalli**](https://www.robertocavalli.com/)\nbrief short video with an [influencer](https://www.instagram.com/kategusar?igsh=MWpjZWluMnBrbGpnbQ==) during Milan fashion week",
+    "description": "brief short video with an [influencer](https://www.instagram.com/kategusar?igsh=MWpjZWluMnBrbGpnbQ==) during Milan fashion week",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
