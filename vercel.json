@@ -33,6 +33,17 @@
   ],
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.maklyarovsky.com"
+        }
+      ],
+      "destination": "https://maklyarovsky.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
