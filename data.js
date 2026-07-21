@@ -315,7 +315,7 @@ const projectDetails = {
   },
   "measureanji": {
     "title": "Measure — Anzhi",
-    "description": "produced by [**Measure**](https://measure-online.com/anji-kala)\nDOP, director Pavel Maklyarovsky\nstyle Zaynab Saidulaeva\nmodels Aminat Ibragimova, Patimat Sultanbagamaeva\nassist Muslimat",
+    "description": "client [**Measure**](https://www.instagram.com/measure.ru/)\nDOP, director Pavel Maklyarovsky\nstyle Zaynab Saidulaeva\nmodels Aminat Ibragimova, Patimat Sultanbagamaeva\nassist Muslimat",
     "embeds": [
       "https://player.vimeo.com/video/1061824671?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
