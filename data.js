@@ -444,7 +444,7 @@ const projectDetails = {
   },
   "followmeto": {
     "title": "#followmeto Mercedes-Benz Fashion Week Tbilisi",
-    "description": "video for [**FollowMeTo**](https://www.instagram.com/followmeto/?hl=en)\nstarring [**Nataly Osmann**](https://www.instagram.com/natalyosmann/?hl=en)",
+    "description": "client [**Follow Me To**](https://www.instagram.com/followmeto/)\nstarring [**Nataly Osmann**](https://www.instagram.com/natalyosmann/?hl=en)",
     "embeds": [
       "https://player.vimeo.com/video/381445129?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
