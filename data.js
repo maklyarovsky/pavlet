@@ -11,42 +11,42 @@ const rubrics = [
 
 const works = [
   { slug: "pketar-catch-em-all", title: "Pketar x Others", categories: ["ai", "photo"], image: "assets/images/pketar-catch-em-all-01.webp" },
-  { slug: "daena", title: "Daena", categories: ["music"], image: "https://static.tildacdn.com/tild6236-6535-4635-b730-393866346463/Screenshot_2024-08-0.png" },
-  { slug: "elle", title: "Elle", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3031-3938-4133-b433-653636303939/Screenshot_2024-01-1.png" },
-  { slug: "noize", title: "Noize MC", categories: ["music"], image: "https://static.tildacdn.com/tild6462-3033-4062-a463-613033643365/Screenshot_2024-07-1.png" },
+  { slug: "daena", title: "Daena", categories: ["music"], image: "assets/legacy/4808d3cc72eb6c5b28ef.webp" },
+  { slug: "elle", title: "Elle", categories: ["fashion", "commercials"], image: "assets/legacy/1b6e5bbdd85598cc1bdf.webp" },
+  { slug: "noize", title: "Noize MC", categories: ["music"], image: "assets/legacy/8b6fe60d765410274cb2.webp" },
   { slug: "alfa-bank-commercial", title: "Alfa Bank commercial", categories: ["reels", "commercials"], image: "assets/images/alfa-bank-commercial-01-poster.jpg" },
   { slug: "lancome-bafta-bts", title: "BAFTA BTS for Lancome", categories: ["reels", "commercials"], image: "assets/images/lancome-bafta-bts-01-poster.jpg" },
-  { slug: "caspian", title: "Caspian", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3039-3563-4361-b732-353662663031/Screenshot_2024-01-1.png" },
-  { slug: "flat22", title: "Flat22", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3663-6531-4565-b735-616131343961/Screenshot_2024-01-1.png" },
+  { slug: "caspian", title: "Caspian", categories: ["fashion", "commercials"], image: "assets/legacy/853e611b3edf05f400f9.webp" },
+  { slug: "flat22", title: "Flat22", categories: ["fashion", "commercials"], image: "assets/legacy/93134bd254b5622b6b08.webp" },
   { slug: "more-is-love", title: "More is love", categories: ["reels", "fashion"], image: "assets/images/more-is-love-01-poster.jpg" },
-  { slug: "sildi", title: "Sildi", categories: ["commercials", "documentary"], image: "https://static.tildacdn.com/tild6333-3936-4861-b838-363435643636/Screenshot_2024-01-1.png" },
-  { slug: "zabit", title: "Zabit", categories: ["commercials"], image: "https://static.tildacdn.com/tild3532-3766-4037-b635-316162366533/Screenshot_2024-07-2.png" },
-  { slug: "measureanji", title: "Measure Anji", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3732-3331-4230-a132-353862303734/Screenshot_2025-03-0.png" },
-  { slug: "donutsday", title: "Donuts Day", categories: ["commercials"], image: "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg" },
-  { slug: "wayhome", title: "Way Home", categories: ["videoart"], image: "https://static.tildacdn.com/tild3630-3834-4437-b863-633330393831/Screenshot_2024-01-1.png" },
-  { slug: "alice", title: "Alice", categories: ["videoart"], image: "https://static.tildacdn.com/tild6434-6562-4533-b238-353066663564/Screenshot_2024-01-2.png" },
-  { slug: "dagestan", title: "Dagestan", categories: ["commercials"], image: "https://static.tildacdn.com/tild3232-3932-4237-b830-666435363430/Screenshot_2024-01-1.png" },
-  { slug: "pankisi", title: "Pankisi", categories: ["music", "videoart"], image: "https://static.tildacdn.com/tild6230-6636-4161-b437-363831663864/Screenshot_2024-02-2.png" },
-  { slug: "qhuaua", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild3661-6232-4561-a365-306661636365/IMG_6344_copy.jpg" },
-  { slug: "followmeto", title: "Follow Me To", categories: ["commercials", "fashion"], image: "https://static.tildacdn.com/tild3633-3066-4133-a432-653561366232/222.jpg" },
-  { slug: "madeinmilan", title: "Made in Milan", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6366-3330-4261-a135-303038373535/IMG_6357_copy.jpg" },
-  { slug: "subay", title: "Subay", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6234-6631-4133-a563-373964386234/Screenshot_2024-01-1.png" },
-  { slug: "tbilisi", title: "Tbilisi", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3263-3265-4034-b131-396538363936/Screenshot_2024-01-2.png" },
+  { slug: "sildi", title: "Sildi", categories: ["commercials", "documentary"], image: "assets/legacy/aace6eb01f2c83e59538.webp" },
+  { slug: "zabit", title: "Zabit", categories: ["commercials"], image: "assets/legacy/80ddc81c825d50db4c07.webp" },
+  { slug: "measureanji", title: "Measure Anji", categories: ["fashion", "commercials"], image: "assets/legacy/40e58791fffc8b0da6e8.webp" },
+  { slug: "donutsday", title: "Donuts Day", categories: ["commercials"], image: "assets/legacy/0ec43d844f252a9634a6.webp" },
+  { slug: "wayhome", title: "Way Home", categories: ["videoart"], image: "assets/legacy/2f2e8e4b69005a4097b0.webp" },
+  { slug: "alice", title: "Alice", categories: ["videoart"], image: "assets/legacy/d9330974cd9f3270b1e7.webp" },
+  { slug: "dagestan", title: "Dagestan", categories: ["commercials"], image: "assets/legacy/a80d8d994e5c93060d18.webp" },
+  { slug: "pankisi", title: "Pankisi", categories: ["music", "videoart"], image: "assets/legacy/bfeb12cd883db2c88b53.webp" },
+  { slug: "qhuaua", title: "JRPJEJ", categories: ["music"], image: "assets/legacy/c161d6fc2fc71495ab7b.webp" },
+  { slug: "followmeto", title: "Follow Me To", categories: ["commercials", "fashion"], image: "assets/legacy/5e4ca159cd721a13a338.webp" },
+  { slug: "madeinmilan", title: "Made in Milan", categories: ["fashion", "commercials"], image: "assets/legacy/8b6912ead2be3cd99d9f.webp" },
+  { slug: "subay", title: "Subay", categories: ["fashion", "commercials"], image: "assets/legacy/a6e7a2be1af96b606a38.webp" },
+  { slug: "tbilisi", title: "Tbilisi", categories: ["fashion", "commercials"], image: "assets/legacy/35c034e5106f2b6d9e62.webp" },
   { slug: "roberto-cavalli-mfw", title: "Roberto Cavalli Milan Fashion Week", categories: ["reels", "fashion"], image: "assets/images/roberto-cavalli-mfw-01-poster.jpg" },
-  { slug: "daydreaming", title: "Daydreaming", categories: ["videoart"], image: "https://static.tildacdn.com/tild3337-3932-4138-b031-623461643534/Screenshot_2024-01-2.png" },
-  { slug: "watercolor", title: "Watercolor", categories: ["videoart"], image: "https://static.tildacdn.com/tild6537-6637-4863-b030-376239343132/Screenshot_2024-01-2.png" },
+  { slug: "daydreaming", title: "Daydreaming", categories: ["videoart"], image: "assets/legacy/897c042c8aeea3b31b78.webp" },
+  { slug: "watercolor", title: "Watercolor", categories: ["videoart"], image: "assets/legacy/c54fbbf082d64509774f.webp" },
   { slug: "variso-lookbook", title: "Lookbook for Variso", categories: ["reels", "fashion"], image: "assets/images/variso-lookbook-01-poster.jpg" },
-  { slug: "karmel", title: "Karmel", categories: ["commercials"], image: "https://static.tildacdn.com/tild6437-3039-4134-b764-303637626461/4r4r4r.jpg" },
-  { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "https://static.tildacdn.com/tild6162-6234-4439-a262-356662373532/Screenshot_2024-07-2.png" },
-  { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "https://static.tildacdn.com/tild3863-3366-4738-a361-343539383231/Screenshot_2024-07-2.png" },
-  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3338-3538-4163-a539-373138663337/Screenshot_2024-07-2.jpg" },
-  { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "https://static.tildacdn.com/tild3037-3133-4462-a461-623736366536/Screenshot_2024-07-2.jpg" },
-  { slug: "std", title: "STD", categories: ["fashion"], image: "https://static.tildacdn.com/tild3266-3533-4439-b037-333762373165/5t5t.jpg" },
+  { slug: "karmel", title: "Karmel", categories: ["commercials"], image: "assets/legacy/079b09ce28a0701a17d0.webp" },
+  { slug: "tole", title: "JRPJEJ", categories: ["music"], image: "assets/legacy/8ca239ef66fa48a448bd.webp" },
+  { slug: "flowers", title: "Flowers", categories: ["videoart"], image: "assets/legacy/6f5f4f570825dcf222c1.webp" },
+  { slug: "chanel", title: "Chanel", categories: ["fashion", "commercials"], image: "assets/legacy/a95143b98494de61f7ac.webp" },
+  { slug: "mavlet", title: "Mavlet", categories: ["videoart"], image: "assets/legacy/ab5c2d1f4c5ee566a40c.webp" },
+  { slug: "std", title: "STD", categories: ["fashion"], image: "assets/legacy/ce402913dd5d961a781a.webp" },
   { slug: "bork-commercial", title: "Commercial for Bork", categories: ["commercials"], image: "assets/images/bork-commercial-01-poster.jpg" },
-  { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild6563-3337-4266-a366-666331383734/6y6y.jpg" },
+  { slug: "buro", title: "Buro", categories: ["fashion", "commercials"], image: "assets/legacy/4231ef5a737f4eecc177.webp" },
   { slug: "la-lettre-perfumes", title: "Visuals for La Lettre perfumes", categories: ["reels", "commercials"], image: "assets/images/la-lettre-perfumes-01-poster.jpg" },
-  { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "https://static.tildacdn.com/tild6265-3635-4539-a530-373934313038/7u7u.jpg" },
-  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials"], image: "https://static.tildacdn.com/tild3739-6231-4465-b331-383131303133/Screenshot_2024-07-2.png" }
+  { slug: "geegun", title: "Geegun", categories: ["music", "commercials"], image: "assets/legacy/c9f58814600cd3af84b5.webp" },
+  { slug: "moonka", title: "Moonka", categories: ["fashion", "commercials"], image: "assets/legacy/805266895b52ccbfbe28.webp" }
 ];
 
 const projectDetails = {
@@ -191,18 +191,18 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3566-6164-4538-b432-383163313231/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild3034-3035-4435-a438-633961663064/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild3464-3036-4238-a136-323133313637/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild3636-6636-4535-b566-656365313636/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6430-3435-4166-a132-653763323161/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6665-6265-4634-b131-346335306138/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6634-6234-4630-a132-383930663830/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6664-3135-4164-a662-386364373832/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6135-3463-4233-a635-346333643664/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild3038-3136-4532-b634-633766396563/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild3866-3062-4065-b935-306130616638/Screenshot_2024-08-0.jpg",
-      "https://static.tildacdn.com/tild6331-3263-4531-b937-353839633831/Screenshot_2024-08-0.jpg"
+      "assets/legacy/18d2f373a26115603172.webp",
+      "assets/legacy/e1a6832b9134dbcb0418.webp",
+      "assets/legacy/3cee5397b5ad25cd6b5b.webp",
+      "assets/legacy/e1b4b80eacdad031916b.webp",
+      "assets/legacy/b61cdebdb54816a42c40.webp",
+      "assets/legacy/97caca197aba2c281a86.webp",
+      "assets/legacy/7d75fe0c7fbae22a3a6e.webp",
+      "assets/legacy/f9a62ef40aa4d59f9f1a.webp",
+      "assets/legacy/e53b90284e6caea1ea60.webp",
+      "assets/legacy/20455fe4e11b42708e4d.webp",
+      "assets/legacy/4b77372cf6a3d09ad489.webp",
+      "assets/legacy/500dac270a53558b9e00.webp"
     ],
     "originalUrl": "https://pavlet.ru/daena"
   },
@@ -214,14 +214,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6539-3631-4265-b733-636462313766/IMG_6259.jpg",
-      "https://static.tildacdn.com/tild3737-3633-4137-b133-363937633637/IMG_6269.jpg",
-      "https://static.tildacdn.com/tild3530-3366-4736-b838-666133663261/IMG_6267.jpg",
-      "https://static.tildacdn.com/tild3639-6336-4032-b231-653062643062/IMG_6266.jpg",
-      "https://static.tildacdn.com/tild3665-6466-4435-b965-333734643233/IMG_6264.jpg",
-      "https://static.tildacdn.com/tild6563-3463-4166-b763-306263393463/IMG_6263.jpg",
-      "https://static.tildacdn.com/tild3338-6339-4737-b034-656662343832/IMG_6262.jpg",
-      "https://static.tildacdn.com/tild6662-3637-4462-b537-616633613963/IMG_6260.jpg"
+      "assets/legacy/86b61cc63734c1fd53af.webp",
+      "assets/legacy/9c9e632a26186ee8d491.webp",
+      "assets/legacy/648e7ddfac10e3ce8a83.webp",
+      "assets/legacy/2c754b28136c7ecadc10.webp",
+      "assets/legacy/92f40bf6506b332de4bc.webp",
+      "assets/legacy/7a5566c0a8feb1422c74.webp",
+      "assets/legacy/2c9730467f63c7e22a43.webp",
+      "assets/legacy/6b78172021a6147f7d09.webp"
     ],
     "originalUrl": "https://pavlet.ru/elle"
   },
@@ -233,12 +233,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3866-3832-4861-b565-393261326665/IMG_6270.jpg",
-      "https://static.tildacdn.com/tild3363-6236-4362-b963-353461323965/IMG_6275.jpg",
-      "https://static.tildacdn.com/tild6538-3330-4561-a432-393762343832/IMG_6271.jpg",
-      "https://static.tildacdn.com/tild6530-3336-4461-b534-343939363362/IMG_6276.jpg",
-      "https://static.tildacdn.com/tild3033-6266-4765-b334-343738383862/IMG_6274.jpg",
-      "https://static.tildacdn.com/tild3432-6366-4538-b865-613364623633/IMG_6273.jpg"
+      "assets/legacy/ed5974393913faf50934.webp",
+      "assets/legacy/f009703d4f2738ba2256.webp",
+      "assets/legacy/44ba440ca0aae6dc6248.webp",
+      "assets/legacy/3001aa5fd7b53c05c80e.webp",
+      "assets/legacy/2b874864de821bfaac6c.webp",
+      "assets/legacy/81131d0522e8168d4e82.webp"
     ],
     "originalUrl": "https://pavlet.ru/noize"
   },
@@ -250,13 +250,13 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6534-6239-4162-b330-623734653166/afisha_2.jpg",
-      "https://static.tildacdn.com/tild6335-3335-4137-b066-663036636538/Screenshot_2024-01-1.png",
-      "https://static.tildacdn.com/tild3561-6638-4364-a137-623233363664/Screenshot_2024-01-1.png",
-      "https://static.tildacdn.com/tild3833-3261-4336-b535-646135653462/Screenshot_2024-01-1.png",
-      "https://static.tildacdn.com/tild3462-3663-4062-a436-386436646635/Screenshot_2024-01-1.png",
-      "https://static.tildacdn.com/tild6237-3731-4533-a664-366665633130/Screenshot_2024-01-1.png",
-      "https://static.tildacdn.com/tild3966-6638-4532-b565-386663393566/Screenshot_2024-01-1.png"
+      "assets/legacy/ba745c94d5561d368e5b.webp",
+      "assets/legacy/3e491e87a142a1b1f96a.webp",
+      "assets/legacy/0eaebb431853d2c18827.webp",
+      "assets/legacy/d2231e01075b7ebc3b88.webp",
+      "assets/legacy/14be90ae10ece01e986a.webp",
+      "assets/legacy/a2b2133766d9f46e0270.webp",
+      "assets/legacy/7a4713f170927bc2f040.webp"
     ],
     "originalUrl": "https://pavlet.ru/caspian"
   },
@@ -268,12 +268,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3963-3531-4363-b461-633238383064/IMG_6287.jpg",
-      "https://static.tildacdn.com/tild3563-3163-4533-b362-393131633433/IMG_6286.jpg",
-      "https://static.tildacdn.com/tild3131-6435-4863-b164-393538383138/IMG_6285.jpg",
-      "https://static.tildacdn.com/tild6137-6337-4464-a338-333063393462/IMG_6284.jpg",
-      "https://static.tildacdn.com/tild6638-6430-4461-b231-653530643164/IMG_6281.jpg",
-      "https://static.tildacdn.com/tild3261-3930-4433-b232-616231613064/IMG_6280.jpg"
+      "assets/legacy/b4cdee890d3e04b5a74c.webp",
+      "assets/legacy/e4d4b8049d3c7fb7022f.webp",
+      "assets/legacy/ff9a19ef067a0e9c273e.webp",
+      "assets/legacy/24cf12d95a104290b67c.webp",
+      "assets/legacy/98fdbb7e5abe4677f70b.webp",
+      "assets/legacy/77822939f0e8a339c9a9.webp"
     ],
     "originalUrl": "https://pavlet.ru/flat22"
   },
@@ -285,12 +285,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3332-3566-4562-b165-383163396564/IMG_6292.jpg",
-      "https://static.tildacdn.com/tild6666-6638-4365-a539-626631376530/IMG_6291.jpg",
-      "https://static.tildacdn.com/tild3237-6435-4438-a630-343432306466/IMG_6290.jpg",
-      "https://static.tildacdn.com/tild6538-6264-4131-a230-646539393361/IMG_6289.jpg",
-      "https://static.tildacdn.com/tild3562-3035-4466-b432-646562323131/IMG_6288.jpg",
-      "https://static.tildacdn.com/tild6139-6465-4362-b338-653536393533/IMG_6293.jpg"
+      "assets/legacy/5501c5d8bc2913895e1a.webp",
+      "assets/legacy/a0f7fc25af1cdb2b5e93.webp",
+      "assets/legacy/1939b35ca12d493db88b.webp",
+      "assets/legacy/d373d783258e9007fc00.webp",
+      "assets/legacy/824f899b1a9da078331b.webp",
+      "assets/legacy/1f69345d0ee2176e454b.webp"
     ],
     "originalUrl": "https://pavlet.ru/sildi"
   },
@@ -302,14 +302,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6638-3932-4235-b135-333739653230/IMG_6302.jpg",
-      "https://static.tildacdn.com/tild6533-3835-4133-b730-333138333538/IMG_6300.jpg",
-      "https://static.tildacdn.com/tild3930-3232-4663-a131-313531313463/IMG_6299.jpg",
-      "https://static.tildacdn.com/tild3031-3965-4366-a665-616332663263/IMG_6298.jpg",
-      "https://static.tildacdn.com/tild3364-3463-4330-a339-323766333135/IMG_6294.jpg",
-      "https://static.tildacdn.com/tild3531-3736-4136-b064-353231663739/IMG_6295.jpg",
-      "https://static.tildacdn.com/tild6164-3161-4335-b034-653862303661/IMG_6296.jpg",
-      "https://static.tildacdn.com/tild3635-6132-4236-b664-633938636134/IMG_6297.jpg"
+      "assets/legacy/cceee9943ae40c9d3132.webp",
+      "assets/legacy/c2e2a98bd75026495e43.webp",
+      "assets/legacy/7ec0aea243b1dadba2c2.webp",
+      "assets/legacy/1bd09433cc98805d4e08.webp",
+      "assets/legacy/5947100dfa19a4d67e69.webp",
+      "assets/legacy/301a811ac40e9de0ccd4.webp",
+      "assets/legacy/52b5caf4fc6860ffc79f.webp",
+      "assets/legacy/3ffda37105fc08b2d484.webp"
     ],
     "originalUrl": "https://pavlet.ru/zabit"
   },
@@ -321,14 +321,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6430-3930-4135-a631-313433336236/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild6462-3637-4130-a534-653865666330/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild3336-3037-4531-a566-656665316331/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild3836-6465-4532-b631-313138376263/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild3164-3665-4066-b763-643161613135/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild6462-6264-4363-b434-356639326438/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild6134-3263-4932-b836-326562353633/Screenshot_2025-03-0.png",
-      "https://static.tildacdn.com/tild3835-3033-4037-b864-303236623066/Screenshot_2025-03-0.png"
+      "assets/legacy/cbed777f4cd3fc93a32c.webp",
+      "assets/legacy/404404d90dfc3e3492a2.webp",
+      "assets/legacy/a795d0583d6e8aa83b57.webp",
+      "assets/legacy/76bf73379794b0a33a50.webp",
+      "assets/legacy/2f1be578d4379ed0c33a.webp",
+      "assets/legacy/87edda49c7e4f5425c10.webp",
+      "assets/legacy/1adab643c124bc6d18d7.webp",
+      "assets/legacy/8e5050025154ecd712a3.webp"
     ],
     "originalUrl": "https://pavlet.ru/measureanji"
   },
@@ -340,14 +340,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6130-6135-4231-b837-373466666631/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild3334-3162-4331-b138-666565333465/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild3234-6436-4337-b239-633462303365/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild3361-3864-4661-b965-383539666430/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild6133-6435-4039-a435-656436313562/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild3065-3632-4232-b234-653962613264/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild6538-3161-4633-b331-356538643632/Screenshot_2026-03-2.jpg",
-      "https://static.tildacdn.com/tild6163-6463-4064-a634-313537663532/Screenshot_2026-03-2.jpg"
+      "assets/legacy/60295d1225d0042f08a7.webp",
+      "assets/legacy/1097632ad876dd751ba3.webp",
+      "assets/legacy/0ec43d844f252a9634a6.webp",
+      "assets/legacy/7230b626324353028a0a.webp",
+      "assets/legacy/7cfe4da9fe0fefcf0f33.webp",
+      "assets/legacy/6e48ea585f6b41be9205.webp",
+      "assets/legacy/270a70d522a5191b40b4.webp",
+      "assets/legacy/8c09d656658cc42e1955.webp"
     ],
     "originalUrl": "https://pavlet.ru/donutsday"
   },
@@ -359,14 +359,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6439-6135-4661-b030-393865323162/IMG_6313.jpg",
-      "https://static.tildacdn.com/tild6132-3830-4263-b535-313939626561/IMG_6312.jpg",
-      "https://static.tildacdn.com/tild3639-6237-4039-a331-363631656461/IMG_6310.jpg",
-      "https://static.tildacdn.com/tild3561-6462-4030-b239-613335306662/IMG_6309.jpg",
-      "https://static.tildacdn.com/tild3530-6638-4465-b136-636437316432/IMG_6305.jpg",
-      "https://static.tildacdn.com/tild3061-3962-4761-b232-363939356237/IMG_6307.jpg",
-      "https://static.tildacdn.com/tild6434-3231-4531-b164-636230336464/IMG_6308.jpg",
-      "https://static.tildacdn.com/tild3738-3038-4431-b430-656233323666/Screenshot_2024-01-1.png"
+      "assets/legacy/0fbd7d739e08787e80fb.webp",
+      "assets/legacy/d3166c465df6c2acfc3b.webp",
+      "assets/legacy/b09cd0b4704a9fedd054.webp",
+      "assets/legacy/95647345b8983c3191d3.webp",
+      "assets/legacy/b3c3710a545e155a55d7.webp",
+      "assets/legacy/fc4b8afce89a482b3989.webp",
+      "assets/legacy/6f2eef0982a757151711.webp",
+      "assets/legacy/96710b6f88e7e6045416.webp"
     ],
     "originalUrl": "https://pavlet.ru/wayhome"
   },
@@ -378,14 +378,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6437-3664-4430-b766-363737303834/IMG_6318.jpg",
-      "https://static.tildacdn.com/tild6535-3137-4361-a363-366430336132/IMG_6317.jpg",
-      "https://static.tildacdn.com/tild3735-3037-4832-a165-396231396230/IMG_6316.jpg",
-      "https://static.tildacdn.com/tild3135-3631-4230-a361-393965353734/IMG_6315.jpg",
-      "https://static.tildacdn.com/tild6537-3937-4464-a261-663832653634/IMG_6319.jpg",
-      "https://static.tildacdn.com/tild6331-6634-4930-b832-336233626435/IMG_6320.jpg",
-      "https://static.tildacdn.com/tild6237-6332-4430-a135-323862623063/IMG_6321.jpg",
-      "https://static.tildacdn.com/tild6533-6333-4965-b261-373930336438/IMG_6322.jpg"
+      "assets/legacy/7ee1e724ece69dc33ffa.webp",
+      "assets/legacy/6bff2c6b10b03b5c91d6.webp",
+      "assets/legacy/9d3575a5cd20db293f00.webp",
+      "assets/legacy/b4dafe6eb02410ff0bcd.webp",
+      "assets/legacy/ea43cf78cac407270cf2.webp",
+      "assets/legacy/7282f8f947b2aa186f3b.webp",
+      "assets/legacy/a6d62aef56e134f22eca.webp",
+      "assets/legacy/b28933ec033af720ce49.webp"
     ],
     "originalUrl": "https://pavlet.ru/alice"
   },
@@ -397,12 +397,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3032-3538-4730-a637-356262643566/IMG_6323.jpg",
-      "https://static.tildacdn.com/tild3738-6134-4336-a435-646431623834/IMG_6325.jpg",
-      "https://static.tildacdn.com/tild3163-6536-4236-b630-303463386565/IMG_6326.jpg",
-      "https://static.tildacdn.com/tild6662-6638-4138-a465-333866343462/IMG_6327.jpg",
-      "https://static.tildacdn.com/tild6663-3061-4535-b162-333564643338/IMG_6328.jpg",
-      "https://static.tildacdn.com/tild3031-3366-4038-a238-343766616666/IMG_6329.jpg"
+      "assets/legacy/f52272d6e5ac4ee26c9c.webp",
+      "assets/legacy/14a87145749aaf1c223b.webp",
+      "assets/legacy/39664f912b923c1753af.webp",
+      "assets/legacy/1c2fd54e690b6e70b1bb.webp",
+      "assets/legacy/fe653dcac23d133bac73.webp",
+      "assets/legacy/993641205b5ef7b9456c.webp"
     ],
     "originalUrl": "https://pavlet.ru/dagestan"
   },
@@ -414,12 +414,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6339-3331-4666-b637-353463373930/IMG_6335.jpg",
-      "https://static.tildacdn.com/tild6162-3932-4538-a332-663733636235/IMG_6334.jpg",
-      "https://static.tildacdn.com/tild6338-3635-4035-b634-333239306665/IMG_6330.jpg",
-      "https://static.tildacdn.com/tild3230-3530-4833-b739-623565353064/IMG_6331.jpg",
-      "https://static.tildacdn.com/tild6632-3839-4637-a635-396439393831/IMG_6332.jpg",
-      "https://static.tildacdn.com/tild6361-6335-4439-a261-383331623063/IMG_6333.jpg"
+      "assets/legacy/985c62beb3edf40866f2.webp",
+      "assets/legacy/a8f46b250097e309bc39.webp",
+      "assets/legacy/47a21869b1615d260058.webp",
+      "assets/legacy/2a7c8f708ae1066cfef8.webp",
+      "assets/legacy/091857f25f59d7a137e2.webp",
+      "assets/legacy/bdc762776fede428a4d6.webp"
     ],
     "originalUrl": "https://pavlet.ru/pankisi"
   },
@@ -431,14 +431,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3862-3935-4461-b636-386333323134/IMG_6338.jpg",
-      "https://static.tildacdn.com/tild3861-6338-4563-b961-346465636562/IMG_6337.jpg",
-      "https://static.tildacdn.com/tild3731-3134-4666-a364-326635653661/IMG_6336.jpg",
-      "https://static.tildacdn.com/tild3065-6566-4234-b232-613030346231/IMG_6339.jpg",
-      "https://static.tildacdn.com/tild3265-3430-4532-a639-373630633762/IMG_6341.jpg",
-      "https://static.tildacdn.com/tild6238-3462-4633-b939-353138366238/IMG_6342.jpg",
-      "https://static.tildacdn.com/tild6333-3036-4733-a335-613861643232/IMG_6343.jpg",
-      "https://static.tildacdn.com/tild6335-3839-4163-a230-326362356438/IMG_6344.jpg"
+      "assets/legacy/603980b2e91f99fe418e.webp",
+      "assets/legacy/1882d4d5456fe3f05573.webp",
+      "assets/legacy/6ccd479ab262e3915ab1.webp",
+      "assets/legacy/e978b25b06764a337a7c.webp",
+      "assets/legacy/d72bb81513ad8aa1d054.webp",
+      "assets/legacy/5b8f1b611c5e1be431ef.webp",
+      "assets/legacy/ae452ff22e3978585986.webp",
+      "assets/legacy/064f3104033997210908.webp"
     ],
     "originalUrl": "https://pavlet.ru/qhuaua"
   },
@@ -450,14 +450,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3235-3131-4337-b266-363935353335/IMG_6346.jpg",
-      "https://static.tildacdn.com/tild6563-3530-4131-a132-636661333764/IMG_6347.jpg",
-      "https://static.tildacdn.com/tild6135-6339-4931-b265-396530643437/IMG_6348.jpg",
-      "https://static.tildacdn.com/tild6136-6431-4461-b463-636636353036/IMG_6352.jpg",
-      "https://static.tildacdn.com/tild3664-3965-4164-b731-643437393238/IMG_6351.jpg",
-      "https://static.tildacdn.com/tild3432-6333-4632-b461-626463396665/IMG_6350.jpg",
-      "https://static.tildacdn.com/tild3633-6133-4734-b532-346231393736/IMG_6349.jpg",
-      "https://static.tildacdn.com/tild3364-6162-4635-a464-353137613839/IMG_6353.jpg"
+      "assets/legacy/3d30b300cd7cfd511893.webp",
+      "assets/legacy/87cbf754b622dfa52cd8.webp",
+      "assets/legacy/f21d654d7509ad4bbce6.webp",
+      "assets/legacy/a3e011584b5b6014b63f.webp",
+      "assets/legacy/1124b15e7d37ac26ec7d.webp",
+      "assets/legacy/c097f4320738a2ae4eaa.webp",
+      "assets/legacy/dc69e251642eb0497a64.webp",
+      "assets/legacy/787e49b3dcc25acd98b6.webp"
     ],
     "originalUrl": "https://pavlet.ru/followmeto"
   },
@@ -469,11 +469,11 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3065-3930-4933-b438-393466353037/IMG_6357.jpg",
-      "https://static.tildacdn.com/tild6665-3165-4561-b863-306163623432/IMG_6356.jpg",
-      "https://static.tildacdn.com/tild3331-6532-4564-b035-623764343730/IMG_6355.jpg",
-      "https://static.tildacdn.com/tild3864-6230-4962-b765-373334303332/IMG_6354.jpg",
-      "https://static.tildacdn.com/tild3737-3835-4465-a530-393030386536/IMG_6359.jpg"
+      "assets/legacy/fa5bc3e8ea372ee843ed.webp",
+      "assets/legacy/ba2c5e4b192855a48146.webp",
+      "assets/legacy/44828a1fea48d43a94b4.webp",
+      "assets/legacy/ae816bad73d6948823c6.webp",
+      "assets/legacy/b9b3bb466e396ac4aeea.webp"
     ],
     "originalUrl": "https://pavlet.ru/madeinmilan"
   },
@@ -485,12 +485,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6162-6462-4366-b530-666465346338/IMG_6360.jpg",
-      "https://static.tildacdn.com/tild3933-6131-4131-b538-663964366565/IMG_6361.jpg",
-      "https://static.tildacdn.com/tild3261-3032-4539-b162-333861396432/IMG_6362.jpg",
-      "https://static.tildacdn.com/tild3937-3836-4639-a130-653264316334/IMG_6363.jpg",
-      "https://static.tildacdn.com/tild6231-6461-4330-b036-666336653634/IMG_6365.jpg",
-      "https://static.tildacdn.com/tild6664-6562-4533-a631-346366356336/IMG_6364.jpg"
+      "assets/legacy/5902bdd7ed11895f8bd0.webp",
+      "assets/legacy/276b8af0a5eecd46d7ae.webp",
+      "assets/legacy/df195cecaf8cf9a2257a.webp",
+      "assets/legacy/03fcaaa434400e79cb32.webp",
+      "assets/legacy/101c1cd2a6b60d1e6e1b.webp",
+      "assets/legacy/478927f189543a9c2206.webp"
     ],
     "originalUrl": "https://pavlet.ru/subay"
   },
@@ -502,14 +502,14 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6661-3764-4230-b635-383461313839/IMG_6377.jpg",
-      "https://static.tildacdn.com/tild6666-6362-4739-a537-343939643463/IMG_6376.jpg",
-      "https://static.tildacdn.com/tild3165-3663-4338-b564-303265363466/IMG_6375.jpg",
-      "https://static.tildacdn.com/tild3061-3731-4535-a564-666338313336/IMG_6369.jpg",
-      "https://static.tildacdn.com/tild3538-6437-4565-a337-313130336235/IMG_6370.jpg",
-      "https://static.tildacdn.com/tild3565-3866-4538-b634-353034663434/IMG_6373.jpg",
-      "https://static.tildacdn.com/tild3534-3434-4938-b838-393038656262/IMG_6367.jpg",
-      "https://static.tildacdn.com/tild3535-6264-4330-b232-313265613633/IMG_6366.jpg"
+      "assets/legacy/9ae823761cc274ba9e2f.webp",
+      "assets/legacy/3931938528682a143901.webp",
+      "assets/legacy/fb6610d57f5b10e63dae.webp",
+      "assets/legacy/771ccd1c7ef10fa1299d.webp",
+      "assets/legacy/96236103d3bea5abbebc.webp",
+      "assets/legacy/f34ec9fa68f19f6500d7.webp",
+      "assets/legacy/60387421357dde31e6be.webp",
+      "assets/legacy/a4a37025c54e0a400584.webp"
     ],
     "originalUrl": "https://pavlet.ru/tbilisi"
   },
@@ -521,11 +521,11 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3738-3062-4839-b865-306438326365/IMG_6381.jpg",
-      "https://static.tildacdn.com/tild3133-6561-4630-a137-346432626635/IMG_6382.jpg",
-      "https://static.tildacdn.com/tild3633-6339-4434-a464-386339306435/IMG_6380.jpg",
-      "https://static.tildacdn.com/tild3264-6265-4438-a239-336438613964/IMG_6379.jpg",
-      "https://static.tildacdn.com/tild3938-3234-4434-b938-633436623438/IMG_6378.jpg"
+      "assets/legacy/aded6f6d0a6c940ca08a.webp",
+      "assets/legacy/7aa72de19a41568c8536.webp",
+      "assets/legacy/8397e11939f4364564ce.webp",
+      "assets/legacy/6e8e0247c22b7b4535b9.webp",
+      "assets/legacy/cacadfeeb554f8a09bba.webp"
     ],
     "originalUrl": "https://pavlet.ru/daydreaming"
   },
@@ -537,12 +537,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6536-3236-4332-b463-363365333933/IMG_6391.jpg",
-      "https://static.tildacdn.com/tild3330-3164-4832-b831-646666623261/IMG_6389.jpg",
-      "https://static.tildacdn.com/tild6538-6162-4136-a163-336665346338/IMG_6388.jpg",
-      "https://static.tildacdn.com/tild3236-6265-4032-b165-633338303739/IMG_6387.jpg",
-      "https://static.tildacdn.com/tild3139-3662-4438-b234-646339663639/IMG_6386.jpg",
-      "https://static.tildacdn.com/tild3930-3666-4237-b934-333666653162/IMG_6385.jpg"
+      "assets/legacy/f3438ad8e7770751cf62.webp",
+      "assets/legacy/fe6d8153c1c51f5b1e3e.webp",
+      "assets/legacy/ffe7b7232b5aafee995d.webp",
+      "assets/legacy/86a17f273ff1e104c869.webp",
+      "assets/legacy/5c9320429120d0e377d7.webp",
+      "assets/legacy/bc9b66604c982dea1d57.webp"
     ],
     "originalUrl": "https://pavlet.ru/watercolor"
   },
@@ -554,12 +554,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3033-6561-4836-a437-386563383337/IMG_6400.jpg",
-      "https://static.tildacdn.com/tild3938-3063-4037-b934-366137376664/IMG_6394.jpg",
-      "https://static.tildacdn.com/tild3664-6238-4561-a164-343338366666/IMG_6399.jpg",
-      "https://static.tildacdn.com/tild3331-3437-4031-a532-623231336233/IMG_6398.jpg",
-      "https://static.tildacdn.com/tild3063-3265-4631-b932-353165633166/IMG_6397.jpg",
-      "https://static.tildacdn.com/tild3966-3934-4465-a133-353161303066/IMG_6396.jpg"
+      "assets/legacy/99844eebe66db9068f68.webp",
+      "assets/legacy/562d519eb9a8a83da8df.webp",
+      "assets/legacy/71ea8d97ac6143e76622.webp",
+      "assets/legacy/68aa92136811e2164cbf.webp",
+      "assets/legacy/7038757d390a7ff22c1a.webp",
+      "assets/legacy/b4ab38e3e468a475d8f8.webp"
     ],
     "originalUrl": "https://pavlet.ru/karmel"
   },
@@ -571,12 +571,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6561-6234-4464-b634-643136396461/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3038-3535-4737-b033-653130653961/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild6137-3861-4430-a164-303936653162/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3232-3934-4332-b934-376432623239/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3566-3361-4564-b533-376539363032/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild6338-3338-4330-a166-356539303136/Screenshot_2024-07-2.png"
+      "assets/legacy/648f812db7b6b244cdf8.webp",
+      "assets/legacy/b6f93192a3e14dc76d07.webp",
+      "assets/legacy/3049b8ffe5e767b3bfe2.webp",
+      "assets/legacy/963d6cb9975f18ab2f73.webp",
+      "assets/legacy/838cf20b6edaf1eaf16e.webp",
+      "assets/legacy/0f5218b72fd82dd6c5c5.webp"
     ],
     "originalUrl": "https://pavlet.ru/tole"
   },
@@ -588,12 +588,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3533-3434-4466-b463-646432316563/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3262-6235-4965-b636-343135393765/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3964-6133-4535-a562-306630333266/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3861-3064-4264-b030-616363343666/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3630-3130-4038-a661-303432303065/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3938-3265-4937-b365-373939376637/Screenshot_2024-07-2.png"
+      "assets/legacy/ba43f0b55b3b368c8972.webp",
+      "assets/legacy/6ddfe17fd36a1e2fc621.webp",
+      "assets/legacy/3ac8ab4791e6435c7d55.webp",
+      "assets/legacy/d087ed9d30955657e6a9.webp",
+      "assets/legacy/730f51ade64f240cfe8f.webp",
+      "assets/legacy/ff558fe9be9ae7e100dc.webp"
     ],
     "originalUrl": "https://pavlet.ru/flowers"
   },
@@ -605,12 +605,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3436-6535-4239-a538-353366363464/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3665-6563-4132-b763-363733353162/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3335-3661-4233-b264-386437336634/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3765-6465-4132-a537-303934383932/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild6132-6339-4566-a238-316430366439/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3734-3639-4638-b264-643265386463/Screenshot_2024-07-2.jpg"
+      "assets/legacy/ca14df7677113091bdd8.webp",
+      "assets/legacy/8f85e9b282ecfa73f052.webp",
+      "assets/legacy/0ec6db2e188aeb70e8cd.webp",
+      "assets/legacy/e38f0329d62848f67e71.webp",
+      "assets/legacy/a66d764fa647042c484d.webp",
+      "assets/legacy/ec7bfdd3aacc69e6d5b9.webp"
     ],
     "originalUrl": "https://pavlet.ru/chanel"
   },
@@ -622,12 +622,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3834-3533-4139-b838-616231333363/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3536-3064-4665-a561-376138383465/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3066-3430-4035-a632-343430336266/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild6334-3862-4338-a637-393833306361/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild6436-3866-4935-a631-653162663566/Screenshot_2024-07-2.jpg",
-      "https://static.tildacdn.com/tild3664-3738-4437-b138-636237383766/Screenshot_2024-07-2.jpg"
+      "assets/legacy/d9c78f16d2c23d93be91.webp",
+      "assets/legacy/6c9a1c84918445b58e50.webp",
+      "assets/legacy/ea4b3e500d520992911c.webp",
+      "assets/legacy/b708ab1588a98c7075b1.webp",
+      "assets/legacy/19a752971a5f876cab43.webp",
+      "assets/legacy/1eb0839c994fc06106bb.webp"
     ],
     "originalUrl": "https://pavlet.ru/mavlet"
   },
@@ -639,12 +639,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild3565-3630-4035-a433-376535653138/IMG_6406.jpg",
-      "https://static.tildacdn.com/tild3865-6438-4265-b663-633037613862/IMG_6405.jpg",
-      "https://static.tildacdn.com/tild3962-3161-4335-b336-656564366537/IMG_6404.jpg",
-      "https://static.tildacdn.com/tild3135-3530-4163-b139-353231663136/IMG_6403.jpg",
-      "https://static.tildacdn.com/tild3834-6365-4666-b237-363832303630/IMG_6402.jpg",
-      "https://static.tildacdn.com/tild6335-3137-4336-b262-623464303336/IMG_6401.jpg"
+      "assets/legacy/08f6f7dc27fc25d57255.webp",
+      "assets/legacy/7878048f2b600b8babc9.webp",
+      "assets/legacy/fb08a46e4b0f13419a8d.webp",
+      "assets/legacy/a3a0e07de98299f11fb5.webp",
+      "assets/legacy/ded728b5ac8e78981a98.webp",
+      "assets/legacy/8a2ccfd365b6a6c513bf.webp"
     ],
     "originalUrl": "https://pavlet.ru/std"
   },
@@ -656,11 +656,11 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6165-3866-4334-b930-353235383434/IMG_6411.jpg",
-      "https://static.tildacdn.com/tild3531-6237-4535-b762-383237373532/IMG_6410.jpg",
-      "https://static.tildacdn.com/tild6564-6533-4231-b761-626663353663/IMG_6409.jpg",
-      "https://static.tildacdn.com/tild3739-6561-4264-a533-343262393931/IMG_6408.jpg",
-      "https://static.tildacdn.com/tild6233-6637-4633-a363-643461343066/IMG_6407.jpg"
+      "assets/legacy/ec428bced6b86eb43de7.webp",
+      "assets/legacy/827b3211ace605c9c7d6.webp",
+      "assets/legacy/bb66edb58cb69a029aa4.webp",
+      "assets/legacy/c39669d4750c039656a3.webp",
+      "assets/legacy/6877af08bce8b29f99b9.webp"
     ],
     "originalUrl": "https://pavlet.ru/buro"
   },
@@ -682,12 +682,12 @@ const projectDetails = {
     ],
     "videoLinks": [],
     "gallery": [
-      "https://static.tildacdn.com/tild6138-3638-4231-a635-316538343562/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild6237-6235-4337-a438-393162373339/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3761-6636-4666-a639-613839343364/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3862-3161-4238-a436-616165336432/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3433-3133-4436-a664-626166373033/Screenshot_2024-07-2.png",
-      "https://static.tildacdn.com/tild3065-3939-4637-b965-393434613435/Screenshot_2024-07-2.png"
+      "assets/legacy/d5f64121646a224c4c91.webp",
+      "assets/legacy/9db835a6900f845deb81.webp",
+      "assets/legacy/fcf3cb32670cfb22583b.webp",
+      "assets/legacy/c3ea34e08a6061878700.webp",
+      "assets/legacy/17a79a76db10b072e0d2.webp",
+      "assets/legacy/8c672b8ce2c2b970624b.webp"
     ],
     "originalUrl": "https://pavlet.ru/moonka"
   }
