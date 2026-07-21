@@ -633,7 +633,7 @@ const projectDetails = {
   },
   "std": {
     "title": "The Style Director — Chanel Special Issue",
-    "description": "Portrait video inspired by iconic Chanel looks\nstyle Ibragim Gatsiev prod Madina Akhsarova muah Kristina Gulaya",
+    "description": "client [**The Style Director**](https://www.instagram.com/thestyledirector_/)\nPortrait video inspired by iconic Chanel looks\nstyle Ibragim Gatsiev prod Madina Akhsarova muah Kristina Gulaya",
     "embeds": [
       "https://player.vimeo.com/video/445387100?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
