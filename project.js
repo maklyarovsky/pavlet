@@ -112,7 +112,9 @@ function isVideoAsset(url) {
 function renderProjectMedia(source, alt, { eager = false } = {}) {
   if (isVideoAsset(source)) {
     const poster = source.replace(/\.mp4(?:[?#].*)?$/i, "-poster.jpg");
-    return `<video src="${escapeHtml(source)}" poster="${escapeHtml(poster)}" aria-label="${escapeHtml(alt)}" autoplay muted loop playsinline preload="metadata"></video>`;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const playback = reducedMotion ? "controls preload=\"metadata\"" : "autoplay muted loop playsinline preload=\"metadata\"";
+    return `<video src="${escapeHtml(source)}" poster="${escapeHtml(poster)}" aria-label="${escapeHtml(alt)}" ${playback}></video>`;
   }
 
   return `<img src="${escapeHtml(source)}" alt="${escapeHtml(alt)}"${eager ? " fetchpriority=\"high\"" : " loading=\"lazy\""} decoding="async">`;
@@ -230,7 +232,7 @@ function renderRelated() {
           return `
             <article class="related-card">
               <a href="${escapeHtml(projectUrl(item.slug))}">
-                <img src="${escapeHtml(item.image)}" alt="${escapeHtml(itemDetails.title || item.title)}" loading="lazy">
+                <img src="${escapeHtml(item.image)}" alt="${escapeHtml(itemDetails.title || item.title)}" loading="lazy" decoding="async">
                 <div class="related-card-copy">
                   <p>${escapeHtml(projectCategoryLabel(item.categories))}</p>
                   <h3>${escapeHtml(itemDetails.title || item.title)}</h3>

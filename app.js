@@ -37,7 +37,7 @@ function renderFilters() {
   ];
 
   filters.innerHTML = buttons.map((rubric) => `
-    <button class="filter ${activeRubric === rubric.id ? "active" : ""}" type="button" data-rubric="${rubric.id}">
+    <button class="filter ${activeRubric === rubric.id ? "active" : ""}" type="button" data-rubric="${rubric.id}" aria-pressed="${activeRubric === rubric.id}">
       ${rubric.title}
     </button>
   `).join("");
@@ -48,10 +48,10 @@ function renderWorks() {
     ? works
     : works.filter((work) => work.categories.includes(activeRubric));
 
-  grid.innerHTML = visible.map((work) => `
+  grid.innerHTML = visible.map((work, index) => `
     <article class="work-card">
       <a href="${escapeHtml(projectUrl(work.slug))}" aria-label="Open ${escapeHtml(workDisplayTitle(work))}">
-        <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(workDisplayTitle(work))}" loading="lazy">
+        <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(workDisplayTitle(work))}" ${index === 0 ? "fetchpriority=\"high\"" : "loading=\"lazy\""} decoding="async">
         <span class="work-meta">${escapeHtml(categoryLabel(work.categories))}</span>
         <h3>${escapeHtml(workDisplayTitle(work))}</h3>
         <svg class="arrow" viewBox="0 0 14 24" aria-hidden="true">
@@ -70,6 +70,13 @@ function setRubric(rubric) {
   activeRubric = rubric;
   renderFilters();
   renderWorks();
+  document.querySelectorAll("[data-rubric-link]").forEach((link) => {
+    if (link.dataset.rubricLink === activeRubric) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
 }
 
 if (filters) {
@@ -101,5 +108,4 @@ document.addEventListener("click", (event) => {
   });
 });
 
-renderFilters();
-renderWorks();
+setRubric(activeRubric);
