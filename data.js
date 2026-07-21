@@ -479,7 +479,7 @@ const projectDetails = {
   },
   "subay": {
     "title": "\"Windy\" for Subay store",
-    "description": "Commercial for Karachai and Spanish headscarves brand inspired by old westerns and Karachai national dress\nbrand **Subay**\nstyle&model Ruzanna Semenova",
+    "description": "client [**Subay**](https://www.instagram.com/subay.store/)\nCommercial for Karachai and Spanish headscarves brand inspired by old westerns and Karachai national dress\nstyle&model Ruzanna Semenova",
     "embeds": [
       "https://player.vimeo.com/video/416990975?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
