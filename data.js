@@ -68,7 +68,7 @@ const projectDetails = {
   },
   "bork-commercial": {
     "title": "Commercial for Bork",
-    "description": "brand [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine\nprod Aleko team\nDOP Aleko team\ndir Pavel Maklyarovsky",
+    "description": "client [**Bork**](https://www.bork.ru/)\nbrief short video with an influencer exploiting coffee machine\nprod Aleko team\nDOP Aleko team\ndir Pavel Maklyarovsky",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
