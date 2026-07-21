@@ -676,7 +676,7 @@ const projectDetails = {
   },
   "moonka": {
     "title": "Moonka store",
-    "description": "brand **Moonka**\nprod Anna Pisman, Anzhela Sarbasheva\nstyle Ibragim Gatsiev",
+    "description": "client [**Moonka**](https://moonkajewelry.com/)\nprod Anna Pisman, Anzhela Sarbasheva\nstyle Ibragim Gatsiev",
     "embeds": [
       "https://player.vimeo.com/video/453548289?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
