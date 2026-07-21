@@ -548,7 +548,7 @@ const projectDetails = {
   },
   "karmel": {
     "title": "\"Going crazy on arts\" for Karmel dress",
-    "description": "Short film for clothing brand inspired by traditional arts studies\nprod Maria Kovalenko mua Venera Kalaychieva model Polina Mangalis",
+    "description": "client **Karmel**\nShort film for clothing brand inspired by traditional arts studies\nprod Maria Kovalenko mua Venera Kalaychieva model Polina Mangalis",
     "embeds": [
       "https://player.vimeo.com/video/297414984?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
