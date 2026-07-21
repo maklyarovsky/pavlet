@@ -599,7 +599,7 @@ const projectDetails = {
   },
   "chanel": {
     "title": "the style director — chanel",
-    "description": "media The Style Director\nproducer Madina Akhsarova\nstyle Ibragim Gatsiev\nvideo Pavel Maklyarovsky",
+    "description": "client [**The Style Director**](https://www.instagram.com/thestyledirector_/)\nproducer Madina Akhsarova\nstyle Ibragim Gatsiev\nvideo Pavel Maklyarovsky",
     "embeds": [
       "https://www.youtube.com/embed/YJyh7JsaJWc?rel=0&fmt=18&html5=1&showinfo=0"
     ],
