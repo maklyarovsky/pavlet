@@ -85,7 +85,7 @@ const projectDetails = {
   },
   "variso-lookbook": {
     "title": "Lookbook for Variso",
-    "description": "brand [**Variso**](https://www.instagram.com/_variso_/#)\nbrief series of short videos showing product\nprod Saida Nazarova\nstyle Madina Varisova",
+    "description": "client [**Variso**](https://www.instagram.com/_variso_/)\nbrief series of short videos showing product\nprod Saida Nazarova\nstyle Madina Varisova",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
