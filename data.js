@@ -391,7 +391,7 @@ const projectDetails = {
   },
   "dagestan": {
     "title": "South Dagestan",
-    "description": "People and places of Dagestan for southdag.ru",
+    "description": "client [**southdag.ru**](https://southdag.ru/)\nPeople and places of Dagestan",
     "embeds": [
       "https://player.vimeo.com/video/525219335?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
