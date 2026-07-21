@@ -119,7 +119,7 @@ const projectDetails = {
   },
   "la-lettre-perfumes": {
     "title": "Visuals for La Lettre perfumes",
-    "description": "brand [**La Lettre**](https://lalettre-parfum.com/)\nbrief short campaign videos",
+    "description": "client [**La Lettre**](https://lalettre-parfum.com/)\nbrief short campaign videos",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
