@@ -152,7 +152,7 @@ const projectDetails = {
   },
   "lancome-bafta-bts": {
     "title": "BAFTA BTS for Lancome",
-    "description": "brand [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome\nprod fashion2max",
+    "description": "client [**Lancome UK**](https://www.lancome.co.uk/)\nbrief short video with influencers getting prepared for BAFTA with Lancome\nprod fashion2max",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
