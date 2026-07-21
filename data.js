@@ -52,7 +52,7 @@ const works = [
 const projectDetails = {
   "more-is-love": {
     "title": "More is love",
-    "description": "brand [**More is love**](https://moreislove.com/)\nbrief short video with an influencer [**Nataly Osmann**](https://www.instagram.com/natalyosmann/?hl=en) showing clothes and accessories",
+    "description": "client [**More is love**](https://www.moreislove.com/)\nbrief short video with an influencer [**Nataly Osmann**](https://www.instagram.com/natalyosmann/?hl=en) showing clothes and accessories",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
