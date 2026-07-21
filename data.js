@@ -262,7 +262,7 @@ const projectDetails = {
   },
   "flat22": {
     "title": "Mirrorland for Flat 22 showroom",
-    "description": "photo & art direction Arina Tadzhibova style Khava assist Abdi model Polina Dmitrieva video Pavel Maklyarovsky",
+    "description": "client **Flat22**\nphoto & art direction Arina Tadzhibova style Khava assist Abdi model Polina Dmitrieva video Pavel Maklyarovsky",
     "embeds": [
       "https://player.vimeo.com/video/907218004?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
