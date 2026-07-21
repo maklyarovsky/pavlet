@@ -496,7 +496,7 @@ const projectDetails = {
   },
   "tbilisi": {
     "title": "Mercedes-Benz Fashion Week Tbilisi Spring-Summer 2020",
-    "description": "Overview of top Tbilisi fashion week 2019 shows",
+    "description": "client [**Follow Me To**](https://www.instagram.com/followmeto/)\nOverview of top Tbilisi fashion week 2019 shows",
     "embeds": [
       "https://player.vimeo.com/video/445382030?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
