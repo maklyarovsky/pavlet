@@ -227,7 +227,7 @@ const projectDetails = {
   },
   "noize": {
     "title": "Noize MC x Osip Mandelstam BTS for Red Pepper film",
-    "description": "Video for Noize MC artist based on the study of Osip Mandelstam's manuscripts\nproduction Red Pepper film\nvideo Pavel Maklyarovsky",
+    "description": "client **Red Pepper Film**\nVideo for Noize MC artist based on the study of Osip Mandelstam's manuscripts\nvideo Pavel Maklyarovsky",
     "embeds": [
       "https://player.vimeo.com/video/549907347?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
