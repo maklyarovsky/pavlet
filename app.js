@@ -5,6 +5,7 @@ const aboutSection = document.querySelector("#about");
 const initialRubric = new URLSearchParams(window.location.search).get("rubric");
 
 let activeRubric = rubrics.some((rubric) => rubric.id === initialRubric) ? initialRubric : "all";
+let cardVideoObserver;
 
 function categoryLabel(ids) {
   return ids.map((id) => rubrics.find((rubric) => rubric.id === id)?.title || id).join(" / ");
@@ -26,6 +27,47 @@ function projectUrl(slug) {
   return window.location.protocol === "file:"
     ? `project.html?slug=${encodeURIComponent(slug)}`
     : `/works/${encodeURIComponent(slug)}/`;
+}
+
+function workMediaMarkup(work, index) {
+  const title = escapeHtml(workDisplayTitle(work));
+  const poster = escapeHtml(work.image);
+
+  if (work.preview) {
+    return `
+      <video class="card-image card-video" poster="${poster}" muted loop playsinline preload="none" aria-hidden="true">
+        <source src="${escapeHtml(work.preview)}" type="video/mp4">
+      </video>
+    `;
+  }
+
+  return `<img class="card-image" src="${poster}" alt="${title}" ${index === 0 ? "fetchpriority=\"high\"" : "loading=\"lazy\""} decoding="async">`;
+}
+
+function initCardVideos() {
+  cardVideoObserver?.disconnect();
+  cardVideoObserver = undefined;
+
+  const videos = [...grid.querySelectorAll(".card-video")];
+  if (!videos.length || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  if (!("IntersectionObserver" in window)) {
+    videos.forEach((video) => video.play().catch(() => {}));
+    return;
+  }
+
+  cardVideoObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const video = entry.target;
+      if (entry.isIntersecting) {
+        video.play().catch(() => {});
+      } else {
+        video.pause();
+      }
+    });
+  }, { threshold: 0.25, rootMargin: "100px 0px" });
+
+  videos.forEach((video) => cardVideoObserver.observe(video));
 }
 
 function renderFilters() {
@@ -51,7 +93,7 @@ function renderWorks() {
   grid.innerHTML = visible.map((work, index) => `
     <article class="work-card">
       <a href="${escapeHtml(projectUrl(work.slug))}" aria-label="Open ${escapeHtml(workDisplayTitle(work))}">
-        <img class="card-image" src="${escapeHtml(work.image)}" alt="${escapeHtml(workDisplayTitle(work))}" ${index === 0 ? "fetchpriority=\"high\"" : "loading=\"lazy\""} decoding="async">
+        ${workMediaMarkup(work, index)}
         <span class="work-meta">${escapeHtml(categoryLabel(work.categories))}</span>
         <h3>${escapeHtml(workDisplayTitle(work))}</h3>
         <svg class="arrow" viewBox="0 0 14 24" aria-hidden="true">
@@ -60,6 +102,8 @@ function renderWorks() {
       </a>
     </article>
   `).join("");
+
+  initCardVideos();
 
   if (aboutSection) {
     aboutSection.hidden = activeRubric !== "all";
