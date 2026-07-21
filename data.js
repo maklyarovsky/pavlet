@@ -334,7 +334,7 @@ const projectDetails = {
   },
   "donutsday": {
     "title": "\"The Era of More Intensive Observation of the Sky\" — Donutsday commercial",
-    "description": "client Donutsday\nproducer and casting Uma Magadova\nDirector, DOP, concept Pavel Maklyarovsky\nstyle Hava\nstyle assist Abdi\nmodels Anna Yudakova, Sasha, Open Up Model Management\nproduction assists Nozya, Dzhuma\nmakeup, hair Julia Tingaeva\ngaffer Yaroslav",
+    "description": "client [**Donutsday**](https://donutsday.ru/)\nproducer and casting Uma Magadova\nDirector, DOP, concept Pavel Maklyarovsky\nstyle Hava\nstyle assist Abdi\nmodels Anna Yudakova, Sasha, Open Up Model Management\nproduction assists Nozya, Dzhuma\nmakeup, hair Julia Tingaeva\ngaffer Yaroslav",
     "embeds": [
       "https://player.vimeo.com/video/1177690385?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
