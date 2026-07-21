@@ -136,7 +136,7 @@ const projectDetails = {
   },
   "alfa-bank-commercial": {
     "title": "Alfa Bank commercial",
-    "description": "brand [**Alfa Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Aleko**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring\nproduced by Aleko team\nsound Ekaterina Druzhinina\nVFX Islam Ayubi",
+    "description": "client [**Alfa-Bank**](https://alfabank.ru/en/)\nbrief short video with an influencer [**Aleko**](https://www.instagram.com/aleko_n?igsh=anVyMGNuc2g4ZXU0) showing possibilities of payment ring\nproduced by Aleko team\nsound Ekaterina Druzhinina\nVFX Islam Ayubi",
     "embeds": [],
     "videoLinks": [],
     "layout": "featured-gif",
