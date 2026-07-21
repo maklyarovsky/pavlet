@@ -650,7 +650,7 @@ const projectDetails = {
   },
   "buro": {
     "title": "Buro 212 commercial",
-    "description": "Short video for jewerly brand inspired by 90's videoart\nprod Maria Kovalenko",
+    "description": "client **Buro 212**\nShort video for jewerly brand inspired by 90's videoart\nprod Maria Kovalenko",
     "embeds": [
       "https://player.vimeo.com/video/323573610?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
