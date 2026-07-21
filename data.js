@@ -565,7 +565,7 @@ const projectDetails = {
   },
   "tole": {
     "title": "JRPJEJ — Quedzoque Tole Tsık’u (Single Version)",
-    "description": "Mood music video for JRPJEJ post-traditional circassian folk band. The song, despite its military theme, is not really about war. It serves more as a backdrop for a story about a tough life and the approach of death, with some bright moments sprinkled in. The video was shot in Southern Dagestan in May 2023.",
+    "description": "client **Ored Recordings**\nMood music video for JRPJEJ post-traditional circassian folk band. The song, despite its military theme, is not really about war. It serves more as a backdrop for a story about a tough life and the approach of death, with some bright moments sprinkled in. The video was shot in Southern Dagestan in May 2023.",
     "embeds": [
       "https://www.youtube.com/embed/uD8XFIyIeGc?rel=0&fmt=18&html5=1&showinfo=0"
     ],
