@@ -8,10 +8,8 @@
   <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#000000">
   <link rel="icon" href="/assets/images/favicon.ico">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css?v=20260721-accessibility">
+  <script src="/site.js?v=20260721-mobile-menu"></script>
+  <link rel="stylesheet" href="/styles.css?v=20260721-mobile-menu">
 </head>
 <body>
   <a class="skip-link" href="#mainContent">skip to content</a>
@@ -19,7 +17,8 @@
     <a class="wordmark" href="/" aria-label="Pavlet home">
       <img src="/images/pavlet-header-logo.png" alt="Pavlet">
     </a>
-    <nav class="site-nav" aria-label="Sections">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="siteNav">menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Sections">
       <a href="/?rubric=fashion#works">fashion</a>
       <a href="/?rubric=music#works">music</a>
       <a href="/?rubric=commercials#works">commercials</a>
