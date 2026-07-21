@@ -425,7 +425,7 @@ const projectDetails = {
   },
   "qhuaua": {
     "title": "JRPJEJ — Qhuaua E Ored music video",
-    "description": "Music video for Circassian post-traditional band «JRPJEJ» on \"The Boar and The Hunter\" song, using digital interpretations of old Circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage Museum and partner institutions.\nprod Ored Recordings\n[Russian Art Archive Network](https://russianartarchive.net/ru/catalogue/document/V14460)",
+    "description": "client **Ored Recordings**\nMusic video for Circassian post-traditional band «JRPJEJ» on \"The Boar and The Hunter\" song, using digital interpretations of old Circassian ornaments\nVideo is a part of The Russian Art Archive Network (RAAN), an online catalogue of documents on the history of Russian contemporary art from the collections of Garage Museum and partner institutions.\n[Russian Art Archive Network](https://russianartarchive.net/ru/catalogue/document/V14460)",
     "embeds": [
       "https://player.vimeo.com/video/361296474?title=0&byline=0&portrait=0&badge=0&color=ffffff"
     ],
